@@ -8,7 +8,7 @@
 
 <script lang="ts">
 import { Vue, Component } from "vue-property-decorator";
-import Default from '../layouts/default.vue'
+import Default from "../layouts/default.vue"
 @Component({
   components: {
     Default
