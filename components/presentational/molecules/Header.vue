@@ -1,6 +1,6 @@
 <template>
     <section id="top" class="header-wrapper">
-        <h1 class="title">KISSE</h1>
+        <h1 class="title">KISSE PORTFOLIO</h1>
         <header class="header">
             <div class="header__menu">
                 <div class="header__menu__line" @click="naviToggle" :class="{'is-active': active}">
