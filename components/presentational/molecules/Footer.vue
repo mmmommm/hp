@@ -5,10 +5,10 @@
         </div>
             <h4>CONTACT ME</h4>
             <ul>
-                <li><a href=""><img src="@/assets/gmail.svg" alt=""></a></li>
-                <li><a href="#"><img src="@/assets/facebook.png" alt=""></a></li>
-                <li><a href="#"><img src="@/assets/twitter.png" alt=""></a></li>
-                <li><a href="#"><img src="@/assets/instagram.png" alt=""></a></li>
+                <li><a href=""><img src="@/assets/icon/gmail.svg" alt=""></a></li>
+                <li><a href="#"><img src="@/assets/icon/facebook.png" alt=""></a></li>
+                <li><a href="#"><img src="@/assets/icon/twitter.png" alt=""></a></li>
+                <li><a href="#"><img src="@/assets/icon/instagram.png" alt=""></a></li>
             </ul>
     </section>
 </template>
