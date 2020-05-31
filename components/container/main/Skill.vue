@@ -1,19 +1,23 @@
 <template>
   <section id="skill">
-    <div class="bg-black">
-      <div class="title-wrapper mx-auto">
+    <div class="skill bg-black">
+      <div class="title-wrapper mx-auto py-8">
         <h1>SKILL</h1>
       </div>
-      <div
-        class="flex justify-between"
-        v-for="(skillCard, i) in skillCards"
-        :key="i"
-      >
-        <div class="w-1/4 rounded border-white">
-          <nuxt-link to="">
-            <img src="" alt="">
-            <p class="skillName">{{ skillCard.name }}</p>
-          </nuxt-link>
+      <div class="container w-full mx-auto">
+        <div class="flex flex-wrap justify-between">
+          <div
+            v-for="(skillCard, i) in skillCards"
+            :key="i"
+            class="w-1/4 px-4 py-4  border-2 border-white card">
+          >
+              <nuxt-link to="/skillIndex">
+                <div class="flex">
+                  <img :src="require('~/static/skill/' + skillCard.src)" alt="" class="w-1/2 icon"/>
+                  <p class="skillName my-auto w-1/2">{{ skillCard.name }}</p>
+                </div>
+              </nuxt-link>
+          </div>
         </div>
       </div>
     </div>
@@ -27,40 +31,43 @@ export default class Skill extends Vue {
   skillCards: skillCard[] = [
     {
       name: "HTML",
-      src: ""
+      src: "html.png"
     },
     {
       name: "CSS",
-      src: ""
+      src: "css.png"
     },
     {
       name: "Typescript",
-      src: ""
+      src: "ts.png"
     },
     {
       name: "Vue/Nuxt",
-      src: ""
+      src: "nuxt.png"
     },
     {
       name: "GitHub",
-      src: ""
+      src: "github.jpg"
     },
     {
       name: "Docker",
-      src: ""
+      src: "docker.png"
     },
     {
       name: "CirclCI",
-      src: ""
+      src: "circleci.png"
     },
     {
       name: "Firebase",
-      src: ""
-    },
+      src: "firebase.png"
+    }
   ]
 }
 </script>
 <style scoped>
+.skill {
+  height: 1000px;
+}
 .title-wrapper h1{
     color: white;
     padding: 10px;
@@ -71,5 +78,12 @@ export default class Skill extends Vue {
 .skillName {
   color: white;
   font-size: 24px
+}
+.icon {
+  width: auto;
+  height: 100px;
+}
+.card {
+  width: 300px;
 }
 </style>
