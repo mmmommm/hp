@@ -15,31 +15,31 @@
             </p>
         </div>
         <div class="flex mx-2 link-wrapper">
-          <div class="lg:w-1/3">
+          <div class="lg:w-1/6">
             <nuxt-link to="">
               <button class="bg-transparent text-black-700 font-semibold hover:text-white py-2 px-4 border border-black-500 hover:border-transparent rounded">
-                <img src="~/assets/github.jpg" alt="">
+                <img src="~/assets/icon/github.jpg" alt="" class="github">
               </button>
             </nuxt-link>
           </div>
-          <div class="lg:w-1/3">
+          <div class="lg:w-1/6">
             <nuxt-link to="">
               <button class="bg-transparent text-black-700 font-semibold hover:text-white py-2 px-4 border border-black-500 hover:border-transparent rounded">
-                <img src="~/assets/twitter.png" alt="">
+                <img src="~/assets/icon/twitter.png" alt="" class ="twitter">
               </button>
             </nuxt-link>
           </div>
-          <div class="lg:w-1/3">
+          <div class="lg:w-1/6 mt-2">
             <nuxt-link to="">
               <button class="bg-transparent text-black-700 font-semibold hover:text-white py-2 px-4 border border-black-500 hover:border-transparent rounded">
-                more　＞
+                more ＞
               </button>
             </nuxt-link>
           </div>
         </div>
       </div>
       <div class="lg:w-1/2">
-        <img src="" alt="">
+        <!-- <img src="~/assets/image/profile.JPG" alt="" class=""> -->
       </div>
     </section>
 </template>
@@ -84,5 +84,17 @@ section #introduce{
   margin-top: 20px;
   margin-left: 150px;
   width: 600px
+}
+.github {
+  height: 40px;
+  width: 40px;
+}
+.twitter {
+  height: 40px;
+  width: 40px;
+}
+.profile {
+  height: 200px;
+  width: 200px;
 }
 </style>
