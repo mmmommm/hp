@@ -9,7 +9,7 @@
           <div
             v-for="(skillCard, i) in skillCards"
             :key="i"
-            class="w-1/4 px-4 py-4  border-2 border-white card">
+            class="w-1/4 px-4 py-4 border-2 border-white card">
           >
               <nuxt-link to="/skillIndex">
                 <div class="flex">
@@ -21,6 +21,8 @@
         </div>
       </div>
     </div>
+    <div id="space1"/>
+    <div id="space2"/>
   </section>
 </template>
 <script lang="ts">
@@ -66,7 +68,7 @@ export default class Skill extends Vue {
 </script>
 <style scoped>
 .skill {
-  height: 1000px;
+  height: 800px;
 }
 .title-wrapper h1{
     color: white;
@@ -85,5 +87,26 @@ export default class Skill extends Vue {
 }
 .card {
   width: 300px;
+}
+#space1 #space2 {
+  height: 100px;
+}
+#space1 {
+  position: relative;
+  background-color: black;
+}
+#space1::before {
+  content:"";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+ /*ここで三角形のサイズを決める。
+  必ず幅100vwにして、ブラウザサイズいっぱいにしてください。*/
+  border-width: 100px 100vw;
+ 
+  border-color: transparent transparent white white;
 }
 </style>

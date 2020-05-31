@@ -1,4 +1,5 @@
 <template>
+  <div>
     <section id="introduce" class="introduce-wrapper flex">
       <div class="lg:w-1/2">
         <div class="title-wrapper">
@@ -42,6 +43,9 @@
         <!-- <img src="~/assets/image/profile.JPG" alt="" class=""> -->
       </div>
     </section>
+    <div id="box1"></div>
+    <div id="box2"></div>
+  </div>
 </template>
 
 <script　lang="ts">
@@ -53,7 +57,8 @@ export default class About extends Vue{}
 <style scoped>
 section{
     padding-top: 30px;
-    z-index: -1;
+    margin-bottom: 200px;
+
 }
 .title-wrapper{
     display: inline-block;
@@ -66,10 +71,6 @@ section{
     text-align: center;
     font-size: 60px;
     font-family: 'Alegreya Sans SC', sans-serif;
-}
-section #introduce{
-    height: 900px;
-    /* margin-top: 10px; */
 }
 .introduce{
     margin-top: 40px;
@@ -96,5 +97,25 @@ section #introduce{
 .profile {
   height: 200px;
   width: 200px;
+}
+#box1 #box2 {
+  height: 100px;
+}
+#box1 {
+  position: relative;
+  background-color: white;
+}
+#box1::before {
+  content:"";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+/*ここで三角形のサイズを決める。
+  必ず幅100vwにして、ブラウザサイズいっぱいにしてください。*/
+  border-width: 100px 100vw ;
+  border-color: transparent black black transparent;
 }
 </style>
