@@ -1,7 +1,7 @@
 <template>
     <section class="footer-wrapper">
         <div class="title-wrapper">
-            <h1>kisse</h1>
+            <h1>KISSE PORTFOLIO</h1>
         </div>
             <h4>CONTACT ME</h4>
             <ul>
