@@ -1,5 +1,5 @@
 <template>
-    <section id="introduce">
+    <section id="about">
       <div class="introduce-wrapper flex">
         <div class="lg:w-1/2">
           <div class="title-wrapper">
@@ -17,25 +17,25 @@
           </div>
           <div class="flex mx-2 link-wrapper">
             <div class="lg:w-1/6">
-              <nuxt-link to="">
-                <button class="bg-transparent text-black-700 font-semibold hover:text-white py-2 px-4 border border-black-500 hover:border-transparent rounded">
+              <a href="https://github.com/mmmommm/" target="_blank">
+                <button class="bg-transparent text-black-700 font-semibold hover:text-white py-2 px-4 rounded">
                   <img src="~/assets/icon/github.jpg" alt="" class="github">
                 </button>
-              </nuxt-link>
+              </a>
             </div>
             <div class="lg:w-1/6">
-              <nuxt-link to="">
-                <button class="bg-transparent text-black-700 font-semibold hover:text-white py-2 px-4 border border-black-500 hover:border-transparent rounded">
+              <a href="https://twitter.com/kissessenose" target="_blank">
+                <button class="bg-transparent text-black-700 font-semibold hover:text-white py-2 px-4 rounded">
                   <img src="~/assets/icon/twitter.png" alt="" class ="twitter">
                 </button>
-              </nuxt-link>
+              </a>
             </div>
             <div class="lg:w-1/6 mt-2">
-              <nuxt-link to="">
+              <a href="">
                 <button class="bg-transparent text-black-700 font-semibold hover:text-white py-2 px-4 border border-black-500 hover:border-transparent rounded">
                   more ＞
                 </button>
-              </nuxt-link>
+              </a>
             </div>
           </div>
         </div>
@@ -47,7 +47,6 @@
       <div id="box2"></div>
     </section>
 </template>
-
 <script　lang="ts">
 import { Vue, Component} from 'vue-property-decorator';
 @Component
