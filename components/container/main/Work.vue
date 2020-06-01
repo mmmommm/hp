@@ -10,9 +10,9 @@
       </div>
       <div class="lg:w-1/2">
         <a href="https://horizontal-ward-253909.web.app/" target="_blank">
-          <p class="title">{{ this.title }}</p>
+          <p class="title">{{ this.title }}　＜＝</p>
         </a>
-        <p class="content">{{ this.content }}</p>
+        <p class="content mt-4 mr-4">{{ this.content }}</p>
       </div>
     </div>
   </section>
@@ -22,7 +22,7 @@ import { Vue, Component } from 'vue-property-decorator';
 @Component
 export default class Work extends Vue {
     title = "BRAND MEMO"
-    content = "株式投資の銘柄を選ぶために企業の分析やチャートの状態についてメモできるように　　作ったウェブサイトです。"
+    content = "株式投資の銘柄を選ぶために企業の分析やチャートの状態についてメモできるように作ったウェブサイトです。"
     url = ""
 }
 </script>
@@ -31,7 +31,7 @@ export default class Work extends Vue {
   height:600px
 }
 .title {
-  font-size: 24px;
+  font-size: 30px;
   margin-right: 250px;
 }
 .content {
