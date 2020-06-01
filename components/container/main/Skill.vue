@@ -5,20 +5,25 @@
         <h1>SKILL</h1>
       </div>
       <div class="container w-full mx-auto">
-        <div class="flex flex-wrap justify-between">
-          <div
-            v-for="(skillCard, i) in skillCards"
-            :key="i"
-            class="w-1/4 px-4 py-4 border-2 border-white card">
-          >
-              <nuxt-link to="/skillIndex">
-                <div class="flex">
-                  <img :src="require('~/static/skill/' + skillCard.src)" alt="" class="w-1/2 icon"/>
-                  <p class="skillName my-auto w-1/2">{{ skillCard.name }}</p>
-                </div>
-              </nuxt-link>
-          </div>
-        </div>
+        <transition-group appear name="list" tag="div" class="flex flex-wrap justify-between" mode="out-in">
+            <div
+              v-for="(skillCard, i) in skillCards"
+              :key="skillCard.id"
+              class="w-1/4 px-4 py-4 border-2 border-white card"
+              :style="{
+                transitionDelay: `${i * 500}ms`
+              }"
+            >
+              <div>
+                <nuxt-link to="/skillIndex">
+                  <div class="flex">
+                    <img :src="require('~/static/skill/' + skillCard.src)" alt="" class="w-1/2 icon"/>
+                    <p class="skillName my-auto w-1/2">{{ skillCard.name }}</p>
+                  </div>
+                </nuxt-link>
+              </div>
+            </div>
+        </transition-group>
       </div>
     </div>
     <div id="space1"/>
@@ -32,34 +37,42 @@ import { skillCard } from "~/interfacee/skillCard"
 export default class Skill extends Vue {
   skillCards: skillCard[] = [
     {
+      id: 1,
       name: "HTML",
       src: "html.png"
     },
     {
+      id: 2,
       name: "CSS",
       src: "css.png"
     },
     {
+      id: 3,
       name: "Typescript",
       src: "ts.png"
     },
     {
+      id: 4,
       name: "Vue/Nuxt",
       src: "nuxt.png"
     },
     {
+      id: 5,
       name: "GitHub",
       src: "github.jpg"
     },
     {
+      id: 6,
       name: "Docker",
       src: "docker.png"
     },
     {
+      id: 7,
       name: "CirclCI",
       src: "circleci.png"
     },
     {
+      id: 8,
       name: "Firebase",
       src: "firebase.png"
     }
@@ -67,6 +80,14 @@ export default class Skill extends Vue {
 }
 </script>
 <style scoped>
+.list-enter-active .list-leave-active {
+  transition: all 1s;
+  transition-delay: 0;
+}
+.list-enter .list-leave-to {
+  opacity: 0;
+  transform: translateY(30px);
+}
 .skill {
   height: 800px;
 }
