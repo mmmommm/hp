@@ -9,7 +9,7 @@
             <div
               v-for="(skillCard, i) in skillCards"
               :key="skillCard.id"
-              class="w-1/4 px-4 py-4 border-2 border-white card"
+              class="w-1/4 px-4 py-4 my-2 border-2 border-white rounded card"
               :style="{
                 transitionDelay: `${i * 500}ms`
               }"
@@ -124,10 +124,9 @@ export default class Skill extends Vue {
   width: 0;
   height: 0;
   border-style: solid;
- /*ここで三角形のサイズを決める。
+  /*ここで三角形のサイズを決める。
   必ず幅100vwにして、ブラウザサイズいっぱいにしてください。*/
-  border-width: 100px 100vw;
- 
+  border-width: 100px 50vw;
   border-color: transparent transparent white white;
 }
 </style>
