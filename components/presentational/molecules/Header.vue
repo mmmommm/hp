@@ -1,7 +1,7 @@
 <template>
     <section>
       <div class="bg-black">
-        <header class="header container mx-auto text-white mt-0">
+        <header class="header container mx-auto text-white">
           <div class="h-16 px-2 flex justify-between items-center fixed w-full left-0 bg-black">
             <h1 class="text-2xl font-semibold md:text-l">KISSE PORTFOLIO</h1>
             <button @click="activeToggle" class="focus:outline-none">
@@ -53,11 +53,10 @@ export default class Header extends Vue{
 }
 </script>
 
-<style lang="scss" scoped>
-section {
-  height: 100px;
-  z-index: 15;
-}
+<style scoped>
+/* section {
+  height: 10px;
+} */
 .navi-enter, .navi-leave-to {
   opacity: 0;
 }
