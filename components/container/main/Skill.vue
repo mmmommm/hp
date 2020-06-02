@@ -5,13 +5,14 @@
         <h1>SKILL</h1>
       </div>
       <div class="container w-full mx-auto">
-        <transition-group appear name="list" tag="div" class="flex flex-wrap justify-between" mode="out-in">
+        <transition-group appear name="list" tag="div" class="flex flex-wrap">
             <div
               v-for="(skillCard, i) in skillCards"
               :key="skillCard.id"
-              class="w-1/4 px-4 py-4 my-2 border-2 border-white rounded card"
+              :data-index="i"
+              class="w-1/4 px-2 py-4 mx-2 my-2 border-2 border-white rounded card"
               :style="{
-                transitionDelay: `${i * 500}ms`
+                transitionDelay: `${i * 100}ms`
               }"
             >
               <div>
@@ -32,47 +33,50 @@
 </template>
 <script lang="ts">
 import { Vue, Component } from 'vue-property-decorator';
-import { skillCard } from "~/interfacee/skillCard"
-@Component
+import { skillCard } from "~/interface/skillCard";
+import { TweenMax, Expo } from 'gsap';
+import scrollAction from "~/directive/scrollAcrion";
+@Component({
+})
 export default class Skill extends Vue {
   skillCards: skillCard[] = [
     {
-      id: 1,
+      id: 8,
       name: "HTML",
       src: "html.png"
     },
     {
-      id: 2,
+      id: 7,
       name: "CSS",
       src: "css.png"
     },
     {
-      id: 3,
+      id: 6,
       name: "Typescript",
       src: "ts.png"
     },
     {
-      id: 4,
+      id: 5,
       name: "Vue/Nuxt",
       src: "nuxt.png"
     },
     {
-      id: 5,
+      id: 4,
       name: "GitHub",
       src: "github.jpg"
     },
     {
-      id: 6,
+      id: 3,
       name: "Docker",
       src: "docker.png"
     },
     {
-      id: 7,
+      id: 2,
       name: "CirclCI",
       src: "circleci.png"
     },
     {
-      id: 8,
+      id: 1,
       name: "Firebase",
       src: "firebase.png"
     }
@@ -80,13 +84,14 @@ export default class Skill extends Vue {
 }
 </script>
 <style scoped>
-.list-enter-active .list-leave-active {
-  transition: all 1s;
-  transition-delay: 0;
-}
-.list-enter .list-leave-to {
+.list-enter, .list-leave-to {
   opacity: 0;
-  transform: translateY(30px);
+}
+.list-enter-to, .list-leave {
+  opacity: 1;
+}
+.list-enter-active, .list-leave-active {
+  transition: 10s;
 }
 .skill {
   height: 800px;
