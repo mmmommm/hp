@@ -5,12 +5,12 @@
         <h1>SKILL</h1>
       </div>
       <div class="w-screen">
-        <transition-group appear name="list" tag="div" class="flex flex-wrap">
+        <transition-group appear name="list" tag="div" class="flex flex-wrap md:ml-48">
             <div
               v-for="(skillCard, i) in skillCards"
               :key="skillCard.id"
               :data-index="i"
-              class="sm:w-1/2 md:w-1/4 px-1 md:px-2 py-4 mx-1 md:mx-2 my-2 border-2 border-white rounded"
+              class="sm:w-1/2 md:w-1/5 px-1 md:px-2 py-4 mx-1 md:mr-2 my-2 border-2 border-white rounded"
               :style="{
                 transitionDelay: `${i * 100}ms`
               }"
