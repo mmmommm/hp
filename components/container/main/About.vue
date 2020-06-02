@@ -6,15 +6,19 @@
               <h1>ABOUT</h1>
           </div>
           <!-- 自己紹介を書く、github、twitterのアカウントのリンクを貼る -->
-          <div class="introduce">
-              <p>
-                同志社大学商学部三回きっせです。簿記会計・企業経営を<br>
-                専攻しておりマーケティングのゼミに所属しています。<br>
-                元々この学部に入った理由は株式投資に興味があったから<br>
-                なので現在少額ですが取引を行っています。<br>
-                文系ですがプログラミング学んでおりエンジニアとして就職する予定です。
-              </p>
-          </div>
+          <transition appear>
+            <div class="introduce">
+                <p>
+                  同志社大学商学部三回きっせです。簿記会計・企業経営を<br>
+                  専攻しておりマーケティングのゼミに所属しています。<br>
+                  元々この学部に入った理由は株式投資に興味があったから<br>
+                  なので現在少額ですが取引を行っています。<br>
+                  文系ですがプログラミング学んでおりエンジニアとして就職する予定です。<br>
+                  高校時代の友人と長期休暇を用いて自転車旅をしており<br>
+                  上に表示されている画像は九州一周をしたときの写真です。
+                </p>
+            </div>
+          </transition>
           <div class="flex mx-2 link-wrapper">
             <div class="lg:w-1/6">
               <a href="https://github.com/mmmommm/" target="_blank">
@@ -54,6 +58,15 @@ export default class About extends Vue{}
 </script>
 
 <style scoped>
+.v-enter, .v-leave-to {
+  opacity: 0;
+}
+.v-enter-to, .v-leave {
+  opacity: 1;
+}
+.v-enter-active, .v-leave-active {
+  transition: 5s;
+}
 section{
     padding-top: 30px;
 
@@ -73,7 +86,6 @@ section{
 .introduce{
     margin-top: 40px;
     margin-left: 100px;
-    z-index: -1;
 }
 .introduce p{
     margin-top: 20px;
@@ -85,7 +97,7 @@ section{
 .link-wrapper {
   margin-top: 20px;
   margin-left: 150px;
-  width: 600px
+  width: 600px;
 }
 .github {
   height: 40px;
