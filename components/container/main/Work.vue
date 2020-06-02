@@ -1,18 +1,18 @@
 <template>
-  <section id="work" class="home-wrapper">
+  <section id="work" class="h-auto md:h-screen">
     <div class="title-wrapper pb-8">
       <h1>WORK</h1>
     </div>
     <!-- 将来的に公開するものが増えたらv-forで回す -->
-    <div class="flex mx-4 my-4 py-2 border-2 border-black rounded">
-      <div class="lg:w-1/2">
-        <img src="~/assets/image/work.png" alt="" class="workImage">
+    <div class="md:flex mx-4 my-4 py-2 md:border-2 md:border-black md:rounded">
+      <div class="w-full lg:w-1/2">
+        <img src="~/assets/image/work.png" alt="" class="workImage md:ml-4">
       </div>
-      <div class="lg:w-1/2">
+      <div class="w-full lg:w-1/2">
         <a :href="this.url" target="_blank">
-          <p class="title">{{ this.title }}　＜＝</p>
+          <p class="text-lg md:text-3xl md:mr-24">{{ this.title }}　＜＝</p>
         </a>
-        <p class="content mt-4 mr-4">{{ this.content }}</p>
+        <p class="text-sm md:text-lg mt-4 mr-4">{{ this.content }}</p>
       </div>
     </div>
   </section>
@@ -27,16 +27,6 @@ export default class Work extends Vue {
 }
 </script>
 <style scoped>
-#work {
-  height:600px
-}
-.title {
-  font-size: 30px;
-  margin-right: 250px;
-}
-.content {
-  font-size: 18px;
-}
 .title-wrapper h1{
   text-align: right;
   margin-right: 300px;
@@ -46,7 +36,6 @@ export default class Work extends Vue {
     font-family: 'Alegreya Sans SC', sans-serif;
 }
 .workImage {
-  margin-left: 50px;
   width: 600px;
   height: auto;
 }

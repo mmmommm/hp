@@ -1,25 +1,26 @@
 <template>
   <section id="skill">
-    <div class="skill bg-black">
-      <div class="title-wrapper mx-auto py-8">
+    <div class="h-600px md:h-screen bg-black">
+      <div class="title-wrapper mx-auto md:py-8">
         <h1>SKILL</h1>
       </div>
-      <div class="container w-full mx-auto">
+      <div class="w-screen">
         <transition-group appear name="list" tag="div" class="flex flex-wrap">
             <div
               v-for="(skillCard, i) in skillCards"
               :key="skillCard.id"
               :data-index="i"
-              class="w-1/4 px-2 py-4 mx-2 my-2 border-2 border-white rounded card"
+              class="sm:w-1/2 md:w-1/4 px-1 md:px-2 py-4 mx-1 md:mx-2 my-2 border-2 border-white rounded"
               :style="{
                 transitionDelay: `${i * 100}ms`
               }"
+
             >
-              <div>
+              <div class="w-40">
                 <nuxt-link to="/skillIndex">
                   <div class="flex">
                     <img :src="require('~/static/skill/' + skillCard.src)" alt="" class="w-1/2 icon"/>
-                    <p class="skillName my-auto w-1/2">{{ skillCard.name }}</p>
+                    <p class="text-base md:text-2xl ml-1 md:ml-4 text-white my-auto w-1/2">{{ skillCard.name }}</p>
                   </div>
                 </nuxt-link>
               </div>
@@ -27,15 +28,14 @@
         </transition-group>
       </div>
     </div>
-    <div id="space1"/>
-    <div id="space2"/>
+    <div class="hidden md:block" id="space1"/>
+    <div class="hidden md:block" id="space2"/>
   </section>
 </template>
 <script lang="ts">
 import { Vue, Component } from 'vue-property-decorator';
 import { skillCard } from "~/interface/skillCard";
 import { TweenMax, Expo } from 'gsap';
-import scrollAction from "~/directive/scrollAcrion";
 @Component({
 })
 export default class Skill extends Vue {
@@ -93,9 +93,6 @@ export default class Skill extends Vue {
 .list-enter-active, .list-leave-active {
   transition: 10s;
 }
-.skill {
-  height: 800px;
-}
 .title-wrapper h1{
     color: white;
     padding: 10px;
@@ -103,16 +100,9 @@ export default class Skill extends Vue {
     font-size: 60px;
     font-family: 'Alegreya Sans SC', sans-serif;
 }
-.skillName {
-  color: white;
-  font-size: 24px
-}
 .icon {
   width: auto;
-  height: 100px;
-}
-.card {
-  width: 300px;
+  height: 80px;
 }
 #space1 #space2 {
   height: 100px;

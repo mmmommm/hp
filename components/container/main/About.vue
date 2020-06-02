@@ -1,14 +1,14 @@
 <template>
     <section id="about">
-      <div class="introduce-wrapper flex">
-        <div class="lg:w-1/2">
-          <div class="title-wrapper">
+      <div class="introduce-wrapper lg:flex">
+        <div class="w-full lg:w-1/2">
+          <div class="title-wrapper ml-24 md:mt-24 md:ml-48">
               <h1>ABOUT</h1>
           </div>
           <!-- 自己紹介を書く、github、twitterのアカウントのリンクを貼る -->
           <transition appear>
-            <div class="introduce">
-                <p>
+            <div class="mt-4 px-4 md:ml-24">
+                <p class="mt-4 md:text-base">
                   同志社大学商学部三回きっせです。簿記会計・企業経営を<br>
                   専攻しておりマーケティングのゼミに所属しています。<br>
                   元々この学部に入った理由は株式投資に興味があったから<br>
@@ -19,22 +19,22 @@
                 </p>
             </div>
           </transition>
-          <div class="flex mx-2 link-wrapper">
-            <div class="lg:w-1/6">
+          <div class="flex mx-2 link-wrapper mt-8 ml-12 md:ml-48 md:w-full">
+            <div class="sm:w-1/3 lg:w-1/6">
               <a href="https://github.com/mmmommm/" target="_blank">
                 <button class="bg-transparent text-black-700 font-semibold hover:text-white py-2 px-4 rounded">
                   <img src="~/assets/icon/github.jpg" alt="" class="github">
                 </button>
               </a>
             </div>
-            <div class="lg:w-1/6">
+            <div class="sm:w-1/3 lg:w-1/6">
               <a href="https://twitter.com/kissessenose" target="_blank">
                 <button class="bg-transparent text-black-700 font-semibold hover:text-white py-2 px-4 rounded">
                   <img src="~/assets/icon/twitter.png" alt="" class ="twitter">
                 </button>
               </a>
             </div>
-            <div class="lg:w-1/6 mt-2">
+            <div class="sm:w-1/3 lg:w-1/6 ml-4 md:ml-0 mt-2">
               <a href="">
                 <button class="bg-transparent text-black-700 font-semibold hover:text-white py-2 px-4 border border-black-500 hover:border-transparent rounded">
                   more ＞
@@ -43,12 +43,15 @@
             </div>
           </div>
         </div>
-        <div class="lg:w-1/2">
+        <div class="hidden md:block lg:w-1/2 lg:ml-12">
           <img src="~/assets/image/profile.JPG" alt="" class="profileImage">
         </div>
+        <div class="mt-4 ml-12 md:hidden">
+          <img src="~/assets/image/circleImage.png" alt="">
+        </div>
       </div>
-      <div id="box1"></div>
-      <div id="box2"></div>
+      <div class="hidden md:block" id="box1"></div>
+      <div class="hidden md:block" id="box2"></div>
     </section>
 </template>
 <script　lang="ts">
@@ -73,8 +76,6 @@ section{
 }
 .title-wrapper{
     display: inline-block;
-    margin-top: 50px;
-    margin-left: 200px;
 }
 .title-wrapper h1{
     color: black;
@@ -83,21 +84,8 @@ section{
     font-size: 60px;
     font-family: 'Alegreya Sans SC', sans-serif;
 }
-.introduce{
-    margin-top: 40px;
-    margin-left: 100px;
-}
-.introduce p{
-    margin-top: 20px;
-    font-size: 18px;
-}
 .introduce-wrapper {
   margin-bottom: 200px;
-}
-.link-wrapper {
-  margin-top: 20px;
-  margin-left: 150px;
-  width: 600px;
 }
 .github {
   height: 40px;
@@ -112,7 +100,6 @@ section{
   width: 200px;
 }
 .profileImage {
-  margin-left: 100px;
   width: auto;
   height: 600px;
 }

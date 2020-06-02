@@ -14,7 +14,7 @@
             </button>
           </div>
           <transition name="navi">
-            <div v-show="active"  class="mt-16 fixed w-full bg-gray-700 left-0">
+            <div v-show="active"  class="mt-16 fixed w-full bg-gray-900 left-0">
               <ul class="md:flex md:justify-end py-4">
                 <li class="border-b md:border-none" @click="activeOff">
                   <nuxt-link to="#home" class="px-8 py-4">Home</nuxt-link>
@@ -54,9 +54,6 @@ export default class Header extends Vue{
 </script>
 
 <style scoped>
-/* section {
-  height: 10px;
-} */
 .navi-enter, .navi-leave-to {
   opacity: 0;
 }
