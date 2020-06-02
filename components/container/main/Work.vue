@@ -9,7 +9,7 @@
         <img src="~/assets/image/work.png" alt="" class="workImage">
       </div>
       <div class="lg:w-1/2">
-        <a href="https://horizontal-ward-253909.web.app/" target="_blank">
+        <a :href="this.url" target="_blank">
           <p class="title">{{ this.title }}　＜＝</p>
         </a>
         <p class="content mt-4 mr-4">{{ this.content }}</p>
@@ -23,7 +23,7 @@ import { Vue, Component } from 'vue-property-decorator';
 export default class Work extends Vue {
     title = "BRAND MEMO"
     content = "株式投資の銘柄を選ぶために企業の分析やチャートの状態についてメモできるように作ったウェブサイトです。"
-    url = ""
+    url = "https://horizontal-ward-253909.web.app/"
 }
 </script>
 <style scoped>
