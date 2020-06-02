@@ -1,33 +1,41 @@
 <template>
-    <section id="top" class="header-wrapper">
-        <h1 class="title">KISSE PORTFOLIO</h1>
-        <header class="header">
-            <div class="header__menu">
-                <div class="header__menu__line" @click="naviToggle" :class="{'is-active': active}">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
+    <section>
+      <div class="bg-black">
+        <header class="header container mx-auto text-white mt-0">
+          <div class="h-16 px-2 flex justify-between items-center fixed w-full left-0 bg-black">
+            <h1 class="text-2xl font-semibold md:text-l">KISSE PORTFOLIO</h1>
+            <button @click="activeToggle" class="focus:outline-none">
+              <transition>
+                <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
+                  <path v-show="!active" d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z"/>
+                  <path v-show="active" d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z"/>
+                </svg>
+              </transition>
+            </button>
+          </div>
+          <transition name="navi">
+            <div v-show="active"  class="mt-16 fixed w-full bg-gray-700 left-0">
+              <ul class="md:flex md:justify-end py-4">
+                <li class="border-b md:border-none" @click="activeOff">
+                  <nuxt-link to="#home" class="px-8 py-4">Home</nuxt-link>
+                </li>
+                <li class="border-b md:border-none" @click="activeOff">
+                  <nuxt-link to="#about" class="px-8 py-4">About</nuxt-link>
+                </li>
+                <li class="border-b md:border-none" @click="activeOff">
+                  <nuxt-link to="#skill" class="px-8 py-4">Skill</nuxt-link>
+                </li>
+                <li class="border-b md:border-none" @click="activeOff">
+                  <nuxt-link to="#work" class="px-8 py-4">Work</nuxt-link>
+                </li>
+                <li class="border-b md:border-none" @click="activeOff">
+                  <nuxt-link to="/contact" class="px-8 py-4">Contact</nuxt-link>
+                </li>
+              </ul>
             </div>
+          </transition>
         </header>
-        <transition name="navi">
-            <nav class="navi" v-show="this.navi">
-                <ul class="navi_wrap">
-                    <li class="navi_wrap_link">
-                        <NuxtLink to="/main">Home</NuxtLink>
-                    </li>
-                    <li class="navi_wrap_link">
-                        <NuxtLink to="/main">About</NuxtLink>
-                    </li>
-                    <li class="navi_wrap_link">
-                        <NuxtLink to="/main">Work</NuxtLink>
-                    </li>
-                    <li class="navi_wrap_link">
-                        <NuxtLink to="/main">Skill</NuxtLink>
-                    </li>
-                </ul>
-            </nav>
-        </transition>
+      </div>
     </section>
 </template>
 
@@ -36,113 +44,27 @@ import { Vue, Component } from "vue-property-decorator";
 @Component
 export default class Header extends Vue{
   active = false
-  navi = false
-  naviToggle() {
+  activeToggle() {
     this.active = !this.active
-    this.navi = !this.navi
-    // this.$store.commit('naviAction')
+  }
+  activeOff() {
+    this.active = false
   }
 }
 </script>
 
 <style lang="scss" scoped>
-.title {
-  padding-top: 50px;
-  margin-left: 45px;
+section {
+  height: 100px;
+  z-index: 15;
 }
-.header-wrapper{
-    border-bottom: solid 1px black ;
+.navi-enter, .navi-leave-to {
+  opacity: 0;
 }
-section{
-    height: 120px;
-    background-color: white;
-    z-index: 1001;
-    opacity: 0.95;
+.navi-enter-to, .navi-leave {
+  opacity: 1;
 }
-.header {
-  width: 100%;
-  background: #fff;
-  height: 60px;
-  &__menu {
-    width: 180px;
-    height: 180px;
-    position: fixed;
-    top: 0;
-    right: 0;
-    &__line {
-      width: 108px;
-      height: 30px;
-      margin-top: 45px;
-      margin-left: auto;
-      margin-right: auto;
-      position: relative;
-      cursor: pointer;
-      z-index: 6;
-      span {
-        width: 100%;
-        height: 2px;
-        background: #000;
-        display: block;
-        transition: .6s;
-        position: absolute;
-        &:first-child {
-          top: 0;
-        }
-        &:nth-child(2) {
-          top: 14px;
-        }
-        &:last-child {
-          bottom: 0;
-        }
-      }
-      &.is-active {
-        span {
-          transition: .6s;
-          &:first-child {
-            transform: rotate(45deg);
-            top: 50%;
-          }
-          &:nth-child(2) {
-            opacity: 0;
-          }
-          &:last-child {
-            transform: rotate(-45deg);
-            top: 50%;
-          }
-        }
-      }
-    }
-  }
-}
-.navi {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  &_wrap {
-    list-style-type: none;
-    text-align: center;
-    padding-left: 0;
-    background: BLACK;
-    padding: 60px 0;
-    width: 100%;
-    height: 500px;
-    z-index: 4;
-    &_link {
-        text-decoration: none;
-        padding: 50px 0;
-        z-index: 5;
-        color: white;
-        font-size: 24px;
-    }
-  }
-  &-enter, &-leave-to {
-    opacity: 0;
-  }
-  &-enter-to, &-leave {
-    opacity: 1;
-  }
-  &-enter-active, &-leave-active {
-    transition: .6s;
-  }
+.navi-enter-active, .navi-leave-active {
+  transition: .7s;
 }
 </style>
