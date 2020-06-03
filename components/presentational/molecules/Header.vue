@@ -17,19 +17,19 @@
             <div v-show="active"  class="mt-16 fixed w-full bg-gray-900 left-0">
               <ul class="md:flex md:justify-end py-4">
                 <li class="border-b md:border-none" @click="activeOff">
-                  <nuxt-link to="#home" class="px-8 py-4">Home</nuxt-link>
+                  <nuxt-link to="#home" class="px-8">Home</nuxt-link>
                 </li>
                 <li class="border-b md:border-none" @click="activeOff">
-                  <nuxt-link to="#about" class="px-8 py-4">About</nuxt-link>
+                  <nuxt-link to="#about" class="px-8">About</nuxt-link>
                 </li>
                 <li class="border-b md:border-none" @click="activeOff">
-                  <nuxt-link to="#skill" class="px-8 py-4">Skill</nuxt-link>
+                  <nuxt-link to="#skill" class="px-8">Skill</nuxt-link>
                 </li>
                 <li class="border-b md:border-none" @click="activeOff">
-                  <nuxt-link to="#work" class="px-8 py-4">Work</nuxt-link>
+                  <nuxt-link to="#work" class="px-8">Work</nuxt-link>
                 </li>
                 <li class="border-b md:border-none" @click="activeOff">
-                  <nuxt-link to="/contact" class="px-8 py-4">Contact</nuxt-link>
+                  <nuxt-link to="/contact" class="px-8">Contact</nuxt-link>
                 </li>
               </ul>
             </div>
