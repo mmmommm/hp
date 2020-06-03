@@ -1,11 +1,10 @@
 <template>
     <section id="about">
-      <div class="introduce-wrapper lg:flex">
+      <div class="introduce-wrapper lg:flex pt-6 md:pt-0">
         <div class="w-full lg:w-1/2">
           <div class="title-wrapper ml-24 md:mt-24 md:ml-48">
               <h1>ABOUT</h1>
           </div>
-          <!-- 自己紹介を書く、github、twitterのアカウントのリンクを貼る -->
           <transition appear>
             <div class="mt-4 px-4 md:ml-24">
                 <p class="mt-4 md:text-base">

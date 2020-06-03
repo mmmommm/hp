@@ -1,18 +1,20 @@
 <template>
   <section id="work" class="h-auto md:h-screen">
-    <div class="title-wrapper pb-8">
-      <h1>WORK</h1>
-    </div>
-    <!-- 将来的に公開するものが増えたらv-forで回す -->
-    <div class="md:flex mx-4 my-4 py-2 md:border-2 md:border-black md:rounded">
-      <div class="w-full lg:w-1/2">
-        <img src="~/assets/image/work.png" alt="" class="workImage md:ml-4">
+    <div class="pt-12 md:pt-24">
+      <div class="title-wrapper pb-8">
+        <h1>WORK</h1>
       </div>
-      <div class="w-full lg:w-1/2">
-        <a :href="this.url" target="_blank">
-          <p class="text-lg md:text-3xl md:mr-24">{{ this.title }}　＜＝</p>
-        </a>
-        <p class="text-sm md:text-lg mt-4 mr-4">{{ this.content }}</p>
+      <!-- 将来的に公開するものが増えたらv-forで回す -->
+      <div class="md:flex mx-4 my-4 py-2 md:border-2 md:border-black md:rounded">
+        <div class="w-full lg:w-1/2">
+          <img src="~/assets/image/work.png" alt="" class="workImage md:ml-4">
+        </div>
+        <div class="w-full lg:w-1/2">
+          <a :href="this.url" target="_blank">
+            <p class="text-lg md:text-3xl md:mr-24">{{ this.title }}　＜＝</p>
+          </a>
+          <p class="text-sm md:text-lg mt-4 mr-4">{{ this.content }}</p>
+        </div>
       </div>
     </div>
   </section>

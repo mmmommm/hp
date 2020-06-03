@@ -1,6 +1,6 @@
 <template>
   <section id="skill">
-    <div class="md:h-screen bg-black">
+    <div class="md:h-screen bg-black pt-12 md:pt-4">
       <div class="title-wrapper mx-auto md:py-8">
         <h1>SKILL</h1>
       </div>
