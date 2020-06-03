@@ -34,11 +34,11 @@
               </a>
             </div>
             <div class="sm:w-1/3 lg:w-1/6 ml-4 md:ml-0 mt-2">
-              <a href="">
-                <button class="bg-transparent text-black-700 font-semibold hover:text-white py-2 px-4 border border-black-500 hover:border-transparent rounded">
+              <nuxt-link to="/aboutDetail">
+                <button class="bg-transparent text-black-700 font-semibold hover:text-white hover:bg-black py-2 px-4 border border-black-500 hover:border-transparent rounded">
                   more ＞
                 </button>
-              </a>
+              </nuxt-link>
             </div>
           </div>
         </div>
