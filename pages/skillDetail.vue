@@ -3,7 +3,7 @@
     <div>
       <h1 class="text-3xl md:text-5xl text-white ml-16 md:ml-24">SKILLS</h1>
     </div>
-    <div class="flex flex-wrap mt-4 md:mt-8 px-4 md:px-48">
+    <div class="flex flex-wrap mt-4 md:mt-8 px-4 md:px-40">
       <div
         v-for="(skillDetail, i) in skillDetails"
         :key="skillDetail.id"
@@ -16,7 +16,7 @@
             <p class="text-base md:text-2xl ml-1 md:ml-4 text-white my-auto w-1/2">{{ skillDetail.name }}</p>
           </div>
           <p class="text-white">期間：{{ skillDetail.period }}</p>
-          <p class="text-white">{{ skillDetail.discription }}</p>
+          <p class="text-white mx-4">{{ skillDetail.description }}</p>
         </div>
       </div>
     </div>
@@ -32,56 +32,56 @@ export default class SkillDetail extends Vue {
       name: "HTML",
       src: "html.png",
       period: "一年ちょっと",
-      discription: "プログラミングを学び始めたときに最初に触った技術です"
+      description: "プログラミングを学び始めたときに最初に触ったマークアップ言語です。特にいうことないです。"
     },
     {
       id: 7,
       name: "CSS",
       src: "css.png",
-      period: "",
-      discription: ""
+      period: "一年ちょっと",
+      description: "HTMLと同じ時期に触り始めました、vuetifyとかのUIフレームワークに逃げてしまっていたので、これから深く理解していきたいです。"
     },
     {
       id: 6,
       name: "Typescript",
       src: "ts.png",
-      period: "",
-      discription: ""
+      period: "半年ぐらい",
+      description: "vueとかのフレームワークを使用するときに使っているので、js自体にとても詳しいってわけじゃないところ直したい。。。"
     },
     {
       id: 5,
       name: "Vue/Nuxt",
       src: "nuxt.png",
-      period: "",
-      discription: ""
+      period: "一年ぐらい",
+      description: "基本的にフロントエンドはこれで書いています、大抵の処理はかけますがコンポーネントの分割とかが苦手なのをどうにかしたいです。"
     },
     {
       id: 4,
       name: "GitHub",
       src: "github.jpg",
-      period: "",
-      discription: ""
+      period: "一年ちょっと",
+      description: "基本的な機能は使えるつもりですが、rebaseとかあんまり自信がないです、どっかでまとめてやりたいです。"
     },
     {
       id: 3,
       name: "Docker",
       src: "docker.png",
-      period: "",
-      discription: ""
+      period: "三ヶ月ぐらい",
+      description: "開発環境整えるぐらいしかできないです、これもやらなきゃいけないとは思ってるんですけどね。。。"
     },
     {
       id: 2,
       name: "CirclCI",
       src: "circleci.png",
-      period: "",
-      discription: ""
+      period: "三ヶ月ぐらい",
+      description: "自分で作ったウェブアプリを自動デプロイするのに使いました、書き方はわかります。"
     },
     {
       id: 1,
       name: "Firebase",
       src: "firebase.png",
-      period: "",
-      discription: ""
+      period: "一年ちょっと",
+      description: "ほとんどサーバーサイド箱やつに任せています、大体の機能は使えるつもりですがSQLの知識がなさすぎてfirestoreの設計ができません。。。"
     }
   ]
 }
