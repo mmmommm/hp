@@ -32,10 +32,10 @@ export default class Work extends Vue {
 .title-wrapper h1{
   text-align: right;
   margin-right: 300px;
-    color: black;
-    padding: 10px;
-    font-size: 60px;
-    font-family: 'Alegreya Sans SC', sans-serif;
+  color: black;
+  padding: 10px;
+  font-size: 60px;
+  font-family: 'Alegreya Sans SC', sans-serif;
 }
 .workImage {
   width: 600px;
