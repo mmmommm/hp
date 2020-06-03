@@ -1,5 +1,5 @@
 <template>
-  <div class="pt-24 md:pt-16 bg-gray-900">
+  <div class="pt-24 md:pt-16 bg-gray-900 border-b">
     <div>
       <h1 class="text-3xl md:text-5xl text-white ml-16 md:ml-24">SKILLS</h1>
     </div>
