@@ -3,5 +3,5 @@ export interface skillDetail {
   name: string;
   src: string;
   period: string;
-  discription: string;
+  description: string;
 }
