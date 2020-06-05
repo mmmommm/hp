@@ -34,7 +34,6 @@
 <script lang="ts">
 import { Vue, Component } from 'vue-property-decorator';
 import { skillCard } from "~/interface/skillCard";
-import { TweenMax, Expo } from 'gsap';
 @Component({
 })
 export default class Skill extends Vue {
