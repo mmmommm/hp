@@ -54,5 +54,8 @@ export default {
   },
   generate: {
     fallback: true
+  },
+  router: {
+    base: '/main/'
   }
 }
