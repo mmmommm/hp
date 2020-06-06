@@ -1,17 +1,24 @@
 <template>
   <div id="app">
-    <Default>
-      <nuxt />
-    </Default>
+    <Home/>
+    <About/>
+    <Skill/>
+    <Work/>
   </div>
 </template>
 
 <script lang="ts">
 import { Vue, Component } from "vue-property-decorator";
-import Default from "../layouts/default.vue"
+import Home from "~/components/container/main/Home.vue";
+import About from "~/components/container/main/About.vue";
+import Skill from "~/components/container/main/Skill.vue";
+import Work from "~/components/container/main/Work.vue";
 @Component({
   components: {
-    Default
+    Home,
+    About,
+    Skill,
+    Work
   }
 })
 export default class Index extends Vue{}
