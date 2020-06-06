@@ -56,6 +56,6 @@ export default {
     fallback: true
   },
   router: {
-    base: '/main/'
+    
   }
 }
