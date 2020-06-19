@@ -24,7 +24,7 @@
         <label class="block text-gray-700 text-sm font-bold mb-2" for="name">
           内容/Body
         </label>
-        <textarea class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" placeholder="body"/>
+        <textarea class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" placeholder="body" rows="8"/>
       </div>
       <div class="flex items-center">
         <div class="w-1/3"></div>

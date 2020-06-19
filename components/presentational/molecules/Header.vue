@@ -17,7 +17,7 @@
             <div v-show="active" class="mt-16 fixed w-full bg-gray-900 left-0">
               <ul class="md:flex md:justify-end py-4">
                 <li class="border-b md:border-none" @click="activeOff">
-                  <nuxt-link to="/main" class="px-8">Home</nuxt-link>
+                  <nuxt-link to="/" class="px-8">Home</nuxt-link>
                 </li>
                 <li class="border-b md:border-none" @click="activeOff">
                   <nuxt-link to="/aboutDetail" class="px-8">About</nuxt-link>

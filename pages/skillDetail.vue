@@ -81,7 +81,7 @@ export default class SkillDetail extends Vue {
       name: "Firebase",
       src: "firebase.png",
       period: "一年ちょっと",
-      description: "ほとんどサーバーサイド箱やつに任せています、大体の機能は使えるつもりですがSQLの知識がなさすぎてfirestoreの設計ができません。。。"
+      description: "ほとんどサーバーサイドの機能を任せています、大体の機能は使えるつもりですがSQLの知識がなさすぎてfirestoreの設計ができません。。。"
     }
   ]
 }
