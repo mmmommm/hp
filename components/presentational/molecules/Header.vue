@@ -1,6 +1,6 @@
 <template>
     <section>
-      <div class="bg-black">
+      <div>
         <header class="header container mx-auto text-white">
           <div class="h-16 px-2 flex justify-between items-center fixed w-full left-0 bg-black md:px-12">
             <h1 class="text-2xl font-semibold md:text-l">KISSE PORTFOLIO</h1>
@@ -25,9 +25,9 @@
                 <li class="border-b md:border-none" @click="activeOff">
                   <nuxt-link to="/skillDetail" class="px-8">Skill</nuxt-link>
                 </li>
-                <li class="border-b md:border-none" @click="activeOff">
+                <!-- <li class="border-b md:border-none" @click="activeOff">
                   <nuxt-link to="/contact" class="px-8">Contact</nuxt-link>
-                </li>
+                </li> -->
               </ul>
             </div>
           </transition>
