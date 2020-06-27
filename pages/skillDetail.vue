@@ -25,6 +25,7 @@
 <script lang="ts">
 import { Vue, Component } from 'vue-property-decorator';
 import { skillDetail } from "~/interface/skillDetail";
+@Component
 export default class SkillDetail extends Vue {
   skillDetails: skillDetail[] = [
     {
