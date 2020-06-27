@@ -11,8 +11,8 @@
         </div>
         <div class="w-full lg:w-1/2">
           <a :href="this.url" target="_blank">
-            <button class="duration-500 ease-in-out bg-transparent text-black-700 font-semibold py-2 px-4 rounded transform hover:scale-110 hover:-translate-y-1">
-              <p class="text-lg md:text-3xl md:mr-24">{{ this.title }}</p>
+            <button class="title font-semibold py-2 px-4 rounded">
+              <p class="text-lg md:text-3xl">{{ this.title }}</p>
             </button>
           </a>
           <p class="text-sm md:text-lg mt-4 mr-4">{{ this.content }}</p>
@@ -42,5 +42,12 @@ export default class Work extends Vue {
 .workImage {
   width: 600px;
   height: auto;
+}
+.title {
+  transition: all 1s 0s ease;
+
+}
+.title:hover {
+  background: #ccc;
 }
 </style>
