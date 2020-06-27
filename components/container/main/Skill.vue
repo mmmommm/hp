@@ -11,9 +11,6 @@
               :key="skillCard.id"
               :data-index="i"
               class="sm:w-1/2 md:w-1/5 px-1 md:px-2 py-4 mx-1 md:mr-2 my-2 border-2 border-white rounded"
-              :style="{
-                transitionDelay: `${i * 100}ms`
-              }"
             >
               <div class="w-40">
                 <nuxt-link to="/skillDetail">
