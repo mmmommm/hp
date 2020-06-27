@@ -11,7 +11,9 @@
         </div>
         <div class="w-full lg:w-1/2">
           <a :href="this.url" target="_blank">
-            <p class="text-lg md:text-3xl md:mr-24">{{ this.title }}　＜＝</p>
+            <button class="duration-500 ease-in-out bg-transparent text-black-700 font-semibold py-2 px-4 rounded transform hover:scale-110 hover:-translate-y-1">
+              <p class="text-lg md:text-3xl md:mr-24">{{ this.title }}</p>
+            </button>
           </a>
           <p class="text-sm md:text-lg mt-4 mr-4">{{ this.content }}</p>
         </div>
