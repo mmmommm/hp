@@ -21,21 +21,21 @@
           <div class="flex mx-2 link-wrapper mt-8 ml-12 md:ml-48 md:w-full">
             <div class="sm:w-1/3 lg:w-1/6">
               <a href="https://github.com/mmmommm/" target="_blank">
-                <button class="duration-500 ease-in-out bg-transparent text-black-700 font-semibold hover:text-white py-2 px-4 rounded transform hover:scale-110 hover:-translate-y-1">
+                <button class="duration-500 ease-in-out hover:text-white py-2 px-4 rounded">
                   <img src="~/assets/icon/github.jpg" alt="" class="github">
                 </button>
               </a>
             </div>
             <div class="sm:w-1/3 lg:w-1/6">
               <a href="https://twitter.com/kissessenose" target="_blank">
-                <button class="duration-500 ease-in-out bg-transparent text-black-700 font-semibold hover:text-white py-2 px-4 rounded transform hover:scale-110 hover:-translate-y-1">
+                <button class="duration-500 ease-in-out py-2 px-4 rounded">
                   <img src="~/assets/icon/twitter.png" alt="" class ="twitter">
                 </button>
               </a>
             </div>
             <div class="sm:w-1/3 lg:w-1/6 ml-4 md:ml-0 mt-2">
               <nuxt-link to="/aboutDetail">
-                <button class="duration-500 ease-in-out bg-transparent text-black-700 font-semibold hover:text-white hover:bg-black py-2 px-4 border border-black-500 transform hover:border-transparent hover:scale-110 hover:-translate-y-1 rounded">
+                <button class="duration-500 ease-in-out bg-transparent text-black-700 font-semibold hover:text-white hover:bg-black py-2 px-4 border border-black-500 rounded">
                   more ＞
                 </button>
               </nuxt-link>
@@ -110,6 +110,7 @@ section{
 #box1::before {
   content:"";
   position: absolute;
+  z-index: -1;
   bottom: 0;
   left: 0;
   width: 0;
