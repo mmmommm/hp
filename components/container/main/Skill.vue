@@ -1,16 +1,19 @@
 <template>
   <section id="skill">
-    <div class="md:h-screen bg-black pt-12 md:pt-4">
-      <div class="title-wrapper mx-auto md:py-8">
+    <div>
+      <div class="title-wrapper mx-auto md:py-8 bg-black">
         <h1>SKILL</h1>
       </div>
-      <div class="w-screen">
+      <div class="w-screen bg-black pb-40">
         <transition-group appear name="list" tag="div" class="flex flex-wrap md:ml-48">
             <div
               v-for="(skillCard, i) in skillCards"
               :key="skillCard.id"
               :data-index="i"
-              class="sm:w-1/2 md:w-1/5 px-1 md:px-2 py-4 mx-1 md:mr-2 my-2 border-2 border-white rounded"
+              class="sm:w-1/2 md:w-1/5 px-1 md:px-2 py-4 mx-1 md:mr-2 my-2 border-2 duration-100 border-white hover:border-4 hover:border-pink-400 rounded"
+              :style="{
+                transitionDelay: `${i * 100}ms`
+              }"
             >
               <div class="w-40">
                 <nuxt-link to="/skillDetail">
@@ -99,15 +102,16 @@ export default class Skill extends Vue {
   width: auto;
   height: 80px;
 }
-#space1 #space2 {
+#space2 {
   height: 100px;
+  position: relative;
 }
 #space1 {
-  position: relative;
-  background-color: black;
+  height: 100px;
 }
-#space1::before {
+#space2::before {
   content:"";
+  z-index: -1;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -117,6 +121,6 @@ export default class Skill extends Vue {
   /*ここで三角形のサイズを決める。
   必ず幅100vwにして、ブラウザサイズいっぱいにしてください。*/
   border-width: 100px 50vw;
-  border-color: transparent transparent white white;
+  border-color: black black transparent transparent;
 }
 </style>
