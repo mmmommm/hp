@@ -28,6 +28,9 @@
       "@nuxt/types"
     ]
   },
+  "files": [
+    "node_modules/gsap/types/index.d.ts"
+  ],
   "exclude": [
     "node_modules",
     ".nuxt",
