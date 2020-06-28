@@ -1,7 +1,7 @@
 <template>
   <div class="h-full">
     <div class="pt-24 md:pt-16 bg-gray-700">
-      <h1 class="text-4xl md:text-5xl text-white ml-16 md:ml-24">ABOUT</h1>
+      <h1 class="text-4xl md:text-5xl text-white ml-16 md:ml-24 about">ABOUT</h1>
       <div class="mt-4 px-4 py-6 md:ml-24">
         <p class="mt-4 md:mb-16 text-white md:text-base">
           同志社大学商学部三回きっせです。<br>
@@ -27,6 +27,11 @@
 </template>
 <script lang="ts">
 import { Vue, Component } from 'vue-property-decorator'
+import { gsap } from 'gsap'
 @Component
-export default class AboutDetail extends Vue {}
+export default class AboutDetail extends Vue {
+  mounted() {
+    gsap.to('.about', { duration:2, ease: "bounce.out", y: 50 })
+  }
+}
 </script>
