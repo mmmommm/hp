@@ -3,10 +3,10 @@
       <div class="introduce-wrapper lg:flex pt-6 md:pt-0">
         <div class="w-full lg:w-1/2">
           <div class="title-wrapper ml-24 md:mt-24 md:ml-48">
-              <h1>ABOUT</h1>
+            <h1>ABOUT</h1>
           </div>
           <transition appear>
-            <div class="mt-4 px-4 md:ml-24">
+            <div class="mt-4 px-4 md:ml-24 box">
                 <p class="mt-4 md:text-base">
                   同志社大学商学部三回きっせです。簿記会計・企業経営を<br>
                   専攻しておりマーケティングのゼミに所属しています。<br>
@@ -54,11 +54,12 @@
     </section>
 </template>
 <script　lang="ts">
-import { Vue, Component} from 'vue-property-decorator';
+import { Vue, Component } from 'vue-property-decorator';
+import { gsap } from '~/plugins/gsap';
 @Component
-export default class About extends Vue{}
+export default class About extends Vue{
+}
 </script>
-
 <style scoped>
 .v-enter, .v-leave-to {
   opacity: 0;
