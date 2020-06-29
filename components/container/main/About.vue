@@ -21,14 +21,14 @@
           <div class="flex mx-2 link-wrapper mt-8 ml-12 md:ml-48 md:w-full">
             <div class="sm:w-1/3 lg:w-1/6">
               <a href="https://github.com/mmmommm/" target="_blank">
-                <button class="py-2 px-4 rounded">
+                <button class="py-2 px-4 rounded hover:opacity-75">
                   <img src="~/assets/icon/github.jpg" alt="" class="github">
                 </button>
               </a>
             </div>
             <div class="sm:w-1/3 lg:w-1/6">
               <a href="https://twitter.com/kissessenose" target="_blank">
-                <button class="py-2 px-4 rounded">
+                <button class="py-2 px-4 rounded hover:opacity-75">
                   <img src="~/assets/icon/twitter.png" alt="" class ="twitter">
                 </button>
               </a>

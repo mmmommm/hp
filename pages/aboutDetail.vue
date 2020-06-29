@@ -41,13 +41,13 @@ import { gsap } from 'gsap'
 @Component
 export default class AboutDetail extends Vue {
   mounted() {
-    gsap.from('.about-first', { duration:2, ease: "bounce.out", x: 200, opacity: 0 })
-    gsap.from('.about-second', { duration:2, delay: 1.5, ease: "expo.out", x: 200, opacity: 0 })
-    gsap.from('.about-third', { duration:2, delay: 3, ease: "bounce.out", x: 200, opacity: 0 })
-    gsap.from('.about-fourth', { duration:2, delay: 4.5, ease: "bounce.out", x: 200, opacity: 0 })
-    gsap.from('.about-fifth', { duration:2, delay: 6, ease: "bounce.out", x: 200, opacity: 0 })
-    gsap.from('.about-sixth', { duration:2, delay: 7.5, ease: "bounce.out", x: 200, opacity: 0 })
-    gsap.from('.about-last', { duration:2, delay: 10, ease: "bounce.out", y: -200, opacity: 0 })
+    gsap.from('.about-first', { duration:0.5, ease: "bounce.out", x: 200, opacity: 0 })
+    gsap.from('.about-second', { duration:0.5, delay: 0.5, ease: "expo.out", x: 200, opacity: 0 })
+    gsap.from('.about-third', { duration:0.5, delay: 0.75, ease: "bounce.out", x: 200, opacity: 0 })
+    gsap.from('.about-fourth', { duration:0.5, delay: 1, ease: "bounce.out", x: 200, opacity: 0 })
+    gsap.from('.about-fifth', { duration:0.5, delay: 1.25, ease: "bounce.out", x: 200, opacity: 0 })
+    gsap.from('.about-sixth', { duration:0.5, delay: 1.5, ease: "bounce.out", x: 200, opacity: 0 })
+    gsap.from('.about-last', { duration:0.5, delay: 2, ease: "bounce.out", y: -200, opacity: 0 })
   }
 }
 </script>

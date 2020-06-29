@@ -1,7 +1,7 @@
 <template>
     <section>
       <div>
-        <header class="header container mx-auto text-white">
+        <header class="container mx-auto text-white">
           <div class="h-16 px-2 flex justify-between items-center fixed w-full left-0 bg-black md:px-12">
             <h1 class="text-2xl font-semibold md:text-l">KISSE PORTFOLIO</h1>
             <button @click="activeToggle" class="focus:outline-none">
