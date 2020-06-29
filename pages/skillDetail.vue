@@ -11,12 +11,14 @@
         class="w-full md:w-1/2 py-4 my-2"
       >
         <div>
-          <div class="flex">
+          <div class="flex skill-title">
             <img :src="require('~/static/skill/' + skillDetail.src)" alt="" class="w-1/2 icon"/>
             <p class="text-base md:text-2xl ml-1 md:ml-4 text-white my-auto w-1/2">{{ skillDetail.name }}</p>
           </div>
-          <p class="text-white">期間：{{ skillDetail.period }}</p>
-          <p class="text-white mx-4">{{ skillDetail.description }}</p>
+          <div class="skill-talk">
+            <p class="text-white">期間：{{ skillDetail.period }}</p>
+            <p class="text-white mx-4">{{ skillDetail.description }}</p>
+          </div>
         </div>
       </div>
     </div>
@@ -25,6 +27,7 @@
 <script lang="ts">
 import { Vue, Component } from 'vue-property-decorator';
 import { skillDetail } from "~/interface/skillDetail";
+import { gsap } from 'gsap'
 @Component
 export default class SkillDetail extends Vue {
   skillDetails: skillDetail[] = [
@@ -85,6 +88,10 @@ export default class SkillDetail extends Vue {
       description: "ほとんどサーバーサイドの機能を任せています、大体の機能は使えるつもりですがSQLの知識がなさすぎてfirestoreの設計ができません。。。"
     }
   ]
+  mounted() {
+    gsap.from('.skill-title', { duration:3, ease: 'bounce.out', x: 50, opacity: 0 })
+    gsap.from('.skill-talk', { duration:3, delay: 2.5, ease: 'back.out(1.7)', y: -100, opacity: 0})
+  }
 }
 </script>
 <style scoped>
