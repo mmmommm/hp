@@ -11,7 +11,7 @@
         class="w-full md:w-1/2 py-4 my-2"
       >
         <div>
-          <div class="flex skill-title">
+          <div class="flex skillTitle">
             <img :src="require('~/static/skill/' + skillDetail.src)" alt="" class="w-1/2 icon"/>
             <p class="text-base md:text-2xl ml-1 md:ml-4 text-white my-auto w-1/2">{{ skillDetail.name }}</p>
           </div>
@@ -89,7 +89,10 @@ export default class SkillDetail extends Vue {
     }
   ]
   mounted() {
-    gsap.from('.skill-title', { duration:3, ease: 'bounce.out', x: 50, opacity: 0 })
+    document.querySelectorAll(".skillTitle").forEach((skillTitle, i) => {
+      gsap.from(skillTitle, { duration:3, delay: i * 0.6, ease: 'bounce.out', x: 50, opacity: 0 })
+    })
+
     gsap.from('.skill-talk', { duration:3, delay: 2.5, ease: 'back.out(1.7)', y: -100, opacity: 0})
   }
 }
