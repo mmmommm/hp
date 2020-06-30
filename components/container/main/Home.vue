@@ -1,16 +1,19 @@
 <template>
-  <section id="home" class="md:h-screen md:flex md:justify-center md:items-center">
-    <div class="hidden md:block">
-      <img src="~/assets/image/bicycle.jpeg" alt="" class="homeImage">
+  <section id="home" class="md:h-screen md:flex md:items-center">
+    <div class="md:w-1/2">
+      <div class="hidden md:block flex md:ml-48 md:mt-16">
+        <img src="~/assets/image/Bicycle1.JPG" alt="" class="h-1/2 homeImage1">
+        <img src="~/assets/image/Bicycle2.jpeg" alt="" class="h-1/2 homeImage2">
+      </div>
+      <div class="md:hidden">
+        <img src="~assets/image/homeImage.jpeg" alt="" class="smImage">
+      </div>
     </div>
-    <div class="md:hidden">
-      <img src="~assets/image/homeImage.jpeg" alt="" class="smImage">
-    </div>
-    <div class="container justify-center">
-      <p class="md:text-6xl text-center welcome">Welcome</p>
-      <p class="md:text-6xl text-center to">to</p>
+    <div class="md:1/2 hidden md:block">
+      <p class="md:text-6xl md:ml-48 text-center welcome">Welcome</p>
+      <p class="md:text-6xl md:ml-48 text-center to">to</p>
       <!-- <p class="md:text-6xl text-center title">KISSE PORTFOLIO</p> -->
-      <div class="flex flex-no-wrap md:ml-48 md:pb-24">
+      <div class="flex flex-no-wrap md:ml-32 md:pb-24">
         <div v-for="(text, i) in texts" :key="i">
           <p class="text-xl md:text-4xl title ml-2">{{ text }}</p>
         </div>
@@ -27,22 +30,21 @@ export default class Home extends Vue {
     "K","I","S","S","E"," ", " ","P","O","R","T","F","O","R","I","O"
   ]
   mounted() {
-    gsap.from('.homeImage', { duration: 2, delay: 1, opacity: 0 })
+    var tl = gsap.timeline({ repeat: -1, repeatDelay: 0 })
+      tl.from('.homeImage1', { duration: 2, delay: 1.5, opacity: 0 })
+      tl.to('.homeImage1', { duration: 2, delay: 1, opacity: 0 })
+      tl.from('.homeImage2', { duration: 2, delay: 0, opacity: 0 })
+      tl.to('.homeImage2', { duration: 2, delay: 0.5, opacity: 0 })
     gsap.from('.smImage', { duration: 2, delay: 5, opacity: 0 })
-    gsap.from('.welcome', { duration: 0.5, delay: 1, opacity: 0, y: 50 })
-    gsap.from('.to', { duration: 0.5, delay: 1.25 , opacity: 0, y: -50 })
-    gsap.to('.welcome', { duration: 0.5, delay: 1.75 , opacity: 0, y: 50})
-    gsap.to('.to', { duration: 0.5, delay: 2 , opacity: 0, y: -50})
-    // gsap.fromTo('.title', { duration: 0.5, delay: 2.25 ,opacity: 0 }, { duration: 0.5, delay:2.25 ,opacity: 1, y:-100})
+    gsap.fromTo('.welcome', { duration: 0.5, opacity: 0, y: 50 },{ delay: 1, opacity: 1, y: 150 })
+    gsap.fromTo('.to', { duration: 0.5, opacity: 0, y: 300 }, { delay: 1.25,opacity: 1, y: 200 })
+    gsap.to('.welcome', { duration: 0.5, delay: 2 , opacity: 0, y: 50})
+    gsap.to('.to', { duration: 0.5, delay: 2.25 , opacity: 0, y: 250})
     document.querySelectorAll(".title").forEach((title, i) => {
-      gsap.from(title, { duration:0.4, delay: 2 + i * 0.1, ease: 'power1.out', x: 50, y: -50, opacity: 0 })
+      gsap.from(title, { duration:0.4, delay: 2.25 + i * 0.1, ease: 'power1.out', x: 50, y: -50, opacity: 0 })
     })
   }
 }
 </script>
 <style scoped>
-.homeImage {
-  width: 100%;
-  height: auto;
-}
 </style>
