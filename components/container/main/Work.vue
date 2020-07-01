@@ -1,8 +1,8 @@
 <template>
   <section id="work" class="h-auto md:h-screen">
     <div class="pt-12 md:pt-24">
-      <div class="title-wrapper pb-8">
-        <h1>WORK</h1>
+      <div class="pb-8">
+        <h1 class="text-5xl md:text-6xl">WORK</h1>
       </div>
       <!-- 将来的に公開するものが増えたらv-forで回す -->
       <div class="md:flex mx-4 my-4 py-2 md:border-2 md:border-black md:rounded">
@@ -31,14 +31,6 @@ export default class Work extends Vue {
 }
 </script>
 <style scoped>
-.title-wrapper h1{
-  text-align: right;
-  margin-right: 300px;
-  color: black;
-  padding: 10px;
-  font-size: 60px;
-  font-family: 'Alegreya Sans SC', sans-serif;
-}
 .workImage {
   width: 600px;
   height: auto;
