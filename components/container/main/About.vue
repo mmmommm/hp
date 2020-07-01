@@ -2,7 +2,7 @@
     <section id="about">
       <div class="introduce-wrapper lg:flex pt-6 md:pt-0">
         <div class="w-full lg:w-1/2">
-          <div class="title-wrapper ml-24 md:mt-24 md:ml-48">
+          <div class="text-5xl md:text-6xl text-center md:mt-24 md:ml-48">
             <h1>ABOUT</h1>
           </div>
           <transition appear>
@@ -22,14 +22,14 @@
             <div class="sm:w-1/3 lg:w-1/6">
               <a href="https://github.com/mmmommm/" target="_blank">
                 <button class="py-2 px-4 rounded hover:opacity-75">
-                  <img src="~/assets/icon/github.jpg" alt="" class="github">
+                  <img src="~/assets/icon/github.jpg" alt="githubのアイコン" class="github">
                 </button>
               </a>
             </div>
             <div class="sm:w-1/3 lg:w-1/6">
               <a href="https://twitter.com/kissessenose" target="_blank">
                 <button class="py-2 px-4 rounded hover:opacity-75">
-                  <img src="~/assets/icon/twitter.png" alt="" class ="twitter">
+                  <img src="~/assets/icon/twitter.png" alt="twitterのアイコン" class ="twitter">
                 </button>
               </a>
             </div>
@@ -43,10 +43,10 @@
           </div>
         </div>
         <div class="hidden md:block lg:w-1/2 lg:ml-12">
-          <img src="~/assets/image/profile.JPG" alt="" class="profileImage">
+          <img src="~/assets/image/profile.JPG" alt="伏見稲荷で撮った画像" class="profileImage">
         </div>
         <div class="mt-4 ml-12 md:hidden">
-          <img src="~/assets/image/circleImage.png" alt="">
+          <img src="~/assets/image/circleImage.png" alt="伏見稲荷で撮った画像を丸く切り抜いたもの">
         </div>
       </div>
       <div class="hidden md:block" id="box1"></div>
@@ -74,13 +74,13 @@ section{
     padding-top: 30px;
 
 }
-.title-wrapper h1{
+/* .title-wrapper h1{
   color: black;
   padding: 10px;
   text-align: center;
   font-size: 60px;
   font-family: 'Alegreya Sans SC', sans-serif;
-}
+} */
 .introduce-wrapper {
   margin-bottom: 200px;
 }
