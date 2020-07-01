@@ -2,7 +2,7 @@
     <section id="about">
       <div class="introduce-wrapper lg:flex pt-6 md:pt-0">
         <div class="w-full lg:w-1/2">
-          <div class="title-wrapper ml-24 md:mt-24 md:ml-48">
+          <div class="text-5xl md:text-6xl text-center md:mt-24 md:ml-48">
             <h1>ABOUT</h1>
           </div>
           <transition appear>
@@ -74,13 +74,13 @@ section{
     padding-top: 30px;
 
 }
-.title-wrapper h1{
+/* .title-wrapper h1{
   color: black;
   padding: 10px;
   text-align: center;
   font-size: 60px;
   font-family: 'Alegreya Sans SC', sans-serif;
-}
+} */
 .introduce-wrapper {
   margin-bottom: 200px;
 }

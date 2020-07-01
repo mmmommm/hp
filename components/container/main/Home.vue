@@ -12,7 +12,6 @@
     <div class="md:1/2 hidden md:block">
       <p class="md:text-6xl md:ml-48 text-center welcome">Welcome</p>
       <p class="md:text-6xl md:ml-48 text-center to">to</p>
-      <!-- <p class="md:text-6xl text-center title">KISSE PORTFOLIO</p> -->
       <div class="flex flex-no-wrap md:ml-32 md:pb-24">
         <div v-for="(text, i) in texts" :key="i">
           <p class="text-xl md:text-4xl title ml-2">{{ text }}</p>
@@ -35,7 +34,6 @@ export default class Home extends Vue {
       tl.to('.homeImage1', { duration: 2, delay: 1, opacity: 0 })
       tl.from('.homeImage2', { duration: 2, delay: 0, opacity: 0 })
       tl.to('.homeImage2', { duration: 2, delay: 0.5, opacity: 0 })
-    // gsap.from('.smImage', { duration: 2, delay: 5, opacity: 0 })
     gsap.fromTo('.welcome', { duration: 0.5, opacity: 0, y: 50 },{ delay: 1, opacity: 1, y: 150 })
     gsap.fromTo('.to', { duration: 0.5, opacity: 0, y: 300 }, { delay: 1.25,opacity: 1, y: 200 })
     gsap.to('.welcome', { duration: 0.5, delay: 2 , opacity: 0, y: 50})

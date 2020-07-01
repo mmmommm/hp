@@ -1,29 +1,29 @@
 <template>
   <section id="skill">
     <div>
-      <div class="title-wrapper mx-auto md:py-8 bg-black">
+      <div class="text-5xl md:text-6xl text-white text-center p-4 mx-auto md:py-8 bg-black">
         <h1>SKILL</h1>
       </div>
-      <div class="w-screen bg-black pb-40">
+      <div class="w-full bg-black pb-40">
         <transition-group appear name="list" tag="div" class="flex flex-wrap md:ml-48">
-            <div
-              v-for="(skillCard, i) in skillCards"
-              :key="skillCard.id"
-              :data-index="i"
-              class="sm:w-1/2 md:w-1/5 px-1 md:px-2 py-4 mx-1 md:mr-2 my-2 border-2 duration-100 border-white hover:border-4 hover:border-pink-400 rounded"
-              :style="{
-                transitionDelay: `${i * 100}ms`
-              }"
-            >
-              <div class="w-40">
-                <nuxt-link to="/skillDetail">
-                  <div class="flex">
-                    <img :src="require('~/static/skill/' + skillCard.src)" alt="それぞれの技術の画像" class="w-1/2 icon"/>
-                    <p class="text-base md:text-2xl ml-1 md:ml-4 text-white my-auto w-1/2">{{ skillCard.name }}</p>
-                  </div>
-                </nuxt-link>
-              </div>
+          <div
+            v-for="(skillCard, i) in skillCards"
+            :key="skillCard.id"
+            :data-index="i"
+            class="w-1/2 md:w-1/5 md:px-2 py-4 md:mr-2 my-2 md:border-2 duration-100 border-white hover:border-4 hover:border-pink-400 rounded"
+            :style="{
+              transitionDelay: `${i * 100}ms`
+            }"
+          >
+            <div>
+              <nuxt-link to="/skillDetail">
+                <div class="flex">
+                  <img :src="require('~/static/skill/' + skillCard.src)" alt="それぞれの技術の画像" class="w-1/2 icon"/>
+                  <p class="text-base md:text-2xl ml-1 md:ml-4 text-white my-auto w-1/2">{{ skillCard.name }}</p>
+                </div>
+              </nuxt-link>
             </div>
+          </div>
         </transition-group>
       </div>
     </div>
@@ -90,13 +90,6 @@ export default class Skill extends Vue {
 }
 .list-enter-active, .list-leave-active {
   transition: 10s;
-}
-.title-wrapper h1{
-    color: white;
-    padding: 10px;
-    text-align: center;
-    font-size: 60px;
-    font-family: 'Alegreya Sans SC', sans-serif;
 }
 .icon {
   width: auto;
