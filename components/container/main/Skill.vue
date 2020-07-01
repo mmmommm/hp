@@ -18,7 +18,7 @@
               <div class="w-40">
                 <nuxt-link to="/skillDetail">
                   <div class="flex">
-                    <img :src="require('~/static/skill/' + skillCard.src)" alt="" class="w-1/2 icon"/>
+                    <img :src="require('~/static/skill/' + skillCard.src)" alt="それぞれの技術の画像" class="w-1/2 icon"/>
                     <p class="text-base md:text-2xl ml-1 md:ml-4 text-white my-auto w-1/2">{{ skillCard.name }}</p>
                   </div>
                 </nuxt-link>

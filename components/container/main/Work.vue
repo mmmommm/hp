@@ -7,7 +7,7 @@
       <!-- 将来的に公開するものが増えたらv-forで回す -->
       <div class="md:flex mx-4 my-4 py-2 md:border-2 md:border-black md:rounded">
         <div class="w-full lg:w-1/2">
-          <img src="~/assets/image/work.png" alt="" class="workImage md:ml-4">
+          <img src="~/assets/image/work.png" alt="brandmemoのホーム画像" class="workImage md:ml-4">
         </div>
         <div class="w-full lg:w-1/2">
           <a :href="this.url" target="_blank">
