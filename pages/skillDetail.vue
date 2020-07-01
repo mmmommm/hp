@@ -90,7 +90,7 @@ export default class SkillDetail extends Vue {
   ]
   mounted() {
     document.querySelectorAll(".skillTitle").forEach((skillTitle, i) => {
-      gsap.from(skillTitle, { duration:3, delay: i * 0.6, ease: 'bounce.out', x: 50, opacity: 0 })
+      gsap.from(skillTitle, { duration:3, delay: i * 0.6, ease: 'bounce.out', y: 50, opacity: 0 })
     })
 
     gsap.from('.skill-talk', { duration:3, delay: 2.5, ease: 'back.out(1.7)', y: -100, opacity: 0})
