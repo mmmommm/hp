@@ -1,13 +1,13 @@
 <template>
-    <section id="about">
-      <div class="introduce-wrapper lg:flex pt-6 md:pt-0">
-        <div class="w-full lg:w-1/2">
-          <div class="text-5xl md:text-6xl text-center md:mt-24 md:ml-48">
+    <section id='about'>
+      <div class='introduce-wrapper lg:flex pt-6 md:pt-0'>
+        <div class='w-full lg:w-1/2'>
+          <div class='text-5xl md:text-6xl text-center md:mt-24 md:ml-48'>
             <h1>ABOUT</h1>
           </div>
           <transition appear>
-            <div class="mt-4 px-4 md:ml-24 box">
-                <p class="mt-4 md:text-base">
+            <div class='mt-4 px-4 md:ml-24 box'>
+                <p class='mt-4 md:text-base'>
                   同志社大学商学部三回きっせです。簿記会計・企業経営を<br>
                   専攻しておりマーケティングのゼミに所属しています。<br>
                   元々この学部に入った理由は株式投資に興味があったから<br>
@@ -18,42 +18,42 @@
                 </p>
             </div>
           </transition>
-          <div class="flex mx-2 link-wrapper mt-8 ml-12 md:ml-48 md:w-full">
-            <div class="sm:w-1/3 lg:w-1/6">
-              <a href="https://github.com/mmmommm/" target="_blank">
-                <button class="py-2 px-4 rounded hover:opacity-75">
-                  <img src="~/assets/icon/github.jpg" alt="githubのアイコン" class="github">
+          <div class='flex mx-2 link-wrapper mt-8 ml-12 md:ml-48 md:w-full'>
+            <div class='sm:w-1/3 lg:w-1/6'>
+              <a href='https://github.com/mmmommm/' target='_blank'>
+                <button class='py-2 px-4 rounded hover:opacity-75'>
+                  <img src='~/assets/icon/github.jpg' alt='githubのアイコン' class='github'>
                 </button>
               </a>
             </div>
-            <div class="sm:w-1/3 lg:w-1/6">
-              <a href="https://twitter.com/kissessenose" target="_blank">
-                <button class="py-2 px-4 rounded hover:opacity-75">
-                  <img src="~/assets/icon/twitter.png" alt="twitterのアイコン" class ="twitter">
+            <div class='sm:w-1/3 lg:w-1/6'>
+              <a href='https://twitter.com/kissessenose' target='_blank'>
+                <button class='py-2 px-4 rounded hover:opacity-75'>
+                  <img src='~/assets/icon/twitter.png' alt='twitterのアイコン' class ='twitter'>
                 </button>
               </a>
             </div>
-            <div class="sm:w-1/3 lg:w-1/6 ml-4 md:ml-0 mt-2">
-              <nuxt-link to="/aboutDetail">
-                <button class="duration-500 ease-in-out bg-transparent text-black-700 font-semibold hover:text-white hover:bg-gray-600 py-2 px-4 border border-black-500 rounded">
+            <div class='sm:w-1/3 lg:w-1/6 ml-4 md:ml-0 mt-2'>
+              <nuxt-link to='/aboutDetail'>
+                <button class='duration-500 ease-in-out bg-transparent text-black-700 font-semibold hover:text-white hover:bg-gray-600 py-2 px-4 border border-black-500 rounded'>
                   more ＞
                 </button>
               </nuxt-link>
             </div>
           </div>
         </div>
-        <div class="hidden md:block lg:w-1/2 lg:ml-12">
-          <img src="~/assets/image/profile.JPG" alt="伏見稲荷で撮った画像" class="profileImage">
+        <div class='hidden md:block lg:w-1/2 lg:ml-12'>
+          <img src='~/assets/image/profile.JPG' alt='伏見稲荷で撮った画像' class='profileImage'>
         </div>
-        <div class="mt-4 ml-12 md:hidden">
-          <img src="~/assets/image/circleImage.png" alt="伏見稲荷で撮った画像を丸く切り抜いたもの">
+        <div class='mt-4 ml-12 md:hidden'>
+          <img src='~/assets/image/circleImage.png' alt='伏見稲荷で撮った画像を丸く切り抜いたもの'>
         </div>
       </div>
-      <div class="hidden md:block" id="box1"></div>
-      <div class="hidden md:block" id="box2"></div>
+      <div class='hidden md:block' id='box1'></div>
+      <div class='hidden md:block' id='box2'></div>
     </section>
 </template>
-<script　lang="ts">
+<script　lang='ts'>
 import { Vue, Component } from 'vue-property-decorator';
 import { gsap } from '~/plugins/gsap';
 @Component
@@ -102,7 +102,7 @@ section{
   margin-top: 100px;
 }
 #box1::before {
-  content:"";
+  content:'';
   position: absolute;
   z-index: -1;
   bottom: 0;
