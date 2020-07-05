@@ -74,13 +74,6 @@ section{
     padding-top: 30px;
 
 }
-/* .title-wrapper h1{
-  color: black;
-  padding: 10px;
-  text-align: center;
-  font-size: 60px;
-  font-family: 'Alegreya Sans SC', sans-serif;
-} */
 .introduce-wrapper {
   margin-bottom: 200px;
 }
@@ -117,8 +110,6 @@ section{
   width: 0;
   height: 0;
   border-style: solid;
-/*ここで三角形のサイズを決める。
-  必ず幅100vwにして、ブラウザサイズいっぱいにしてください。*/
   border-width: 100px 50vw ;
   border-color: transparent black black transparent;
 }
