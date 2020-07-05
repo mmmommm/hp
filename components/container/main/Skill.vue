@@ -95,8 +95,6 @@ export default class Skill extends Vue {
   width: 0;
   height: 0;
   border-style: solid;
-  /*ここで三角形のサイズを決める。
-  必ず幅100vwにして、ブラウザサイズいっぱいにしてください。*/
   border-width: 100px 50vw;
   border-color: black black transparent transparent;
 }
