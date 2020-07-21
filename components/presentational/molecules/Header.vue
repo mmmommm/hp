@@ -4,7 +4,23 @@
         <header class='container mx-auto text-white'>
           <div class='h-16 px-2 flex justify-between items-center fixed w-full left-0 bg-black md:px-12'>
             <h1 class='text-2xl font-semibold md:text-l'>KISSE PORTFOLIO</h1>
-            <button @click='activeToggle' class='focus:outline-none'>
+            <div class='hidden md:block'>
+              <ul class='md:flex py-4 md:mr-12'>
+                <li class='border-b md:border-none'>
+                  <nuxt-link to='/' class='px-8'>Home</nuxt-link>
+                </li>
+                <li class='border-b md:border-none' >
+                  <nuxt-link to='/aboutDetail' class='px-8'>About</nuxt-link>
+                </li>
+                <li class='border-b md:border-none'>
+                  <nuxt-link to='/skillDetail' class='px-8'>Skill</nuxt-link>
+                </li>
+                <!-- <li class='border-b md:border-none' @click='activeOff'>
+                  <nuxt-link to='/contact' class='px-8'>Contact</nuxt-link>
+                </li> -->
+              </ul>
+            </div>
+            <button @click='activeToggle' class='focus:outline-none md:hidden'>
               <transition name='navi'>
                 <svg class='h-6 w-6 fill-current' viewBox='0 0 24 24'>
                   <path v-show='!active' d='M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z'/>
