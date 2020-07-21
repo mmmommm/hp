@@ -2,7 +2,7 @@
     <section id='about'>
       <div class='introduce-wrapper lg:flex pt-6 md:pt-0'>
         <div class='w-full lg:w-1/2'>
-          <div id='start' class="start">
+          <div id='about-start' class="about-start">
             <div class='text-5xl md:text-6xl text-center md:mt-24 md:ml-48'>
               <h1>ABOUT</h1>
             </div>
@@ -53,31 +53,31 @@
       <div class='hidden md:block' id='box2'></div>
     </section>
 </template>
-<script　lang='ts'>
+<script lang='ts'>
 import { Vue, Component, Watch } from 'vue-property-decorator';
-import { gsap } from 'gsap'
 @Component
 export default class About extends Vue{
-  display = false
   positionY = 0
   positions = {
     second: 0
   }
   mounted() {
     window.addEventListener('scroll', this.checkScroll)
-    this.positions = {
-      second: document.getElementById('about').getBoundingClientRect().top
+    if (document != null) {
+      this.positions = {
+        second: document.getElementById('about').getBoundingClientRect().top
+      }
+      this.positionY++
     }
-    this.positionY++
   }
   checkScroll() {
     this.positionY = window.scrollY
   }
 @Watch('positionY')
-  positionYChange(to: number, from) {
+  positionYChange(to: number, from: never) {
     const scrollOffset = to + 100
     if (this.positions.second <= scrollOffset) {
-      let el = document.getElementById('start')
+      let el = document.getElementById('about-start')
       if (el != null) {
         el.setAttribute('class', 'aboutAnime')
       }
@@ -108,7 +108,7 @@ section{
   width: auto;
   height: 600px;
 }
-.start {
+.about-start {
   opacity: 0;
 }
 .aboutAnime {
