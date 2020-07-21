@@ -2,7 +2,7 @@
     <section id='about'>
       <div class='introduce-wrapper lg:flex pt-6 md:pt-0'>
         <div class='w-full lg:w-1/2'>
-          <template v-if="display">
+          <div id='start' class="start">
             <div class='text-5xl md:text-6xl text-center md:mt-24 md:ml-48'>
               <h1>ABOUT</h1>
             </div>
@@ -40,7 +40,7 @@
                 </nuxt-link>
               </div>
             </div>
-          </template>
+          </div>
         </div>
         <div class='hidden md:block lg:w-1/2 lg:ml-12'>
           <img src='~/assets/image/profile.JPG' alt='伏見稲荷で撮った画像' class='profileImage'>
@@ -55,6 +55,7 @@
 </template>
 <script　lang='ts'>
 import { Vue, Component, Watch } from 'vue-property-decorator';
+import { gsap } from 'gsap'
 @Component
 export default class About extends Vue{
   display = false
@@ -73,11 +74,13 @@ export default class About extends Vue{
     this.positionY = window.scrollY
   }
 @Watch('positionY')
-  positionYChange(to, from) {
+  positionYChange(to: number, from) {
     const scrollOffset = to + 100
-    let el
     if (this.positions.second <= scrollOffset) {
-      this.display = true
+      let el = document.getElementById('start')
+      if (el != null) {
+        el.setAttribute('class', 'aboutAnime')
+      }
     }
   }
 }
@@ -104,6 +107,13 @@ section{
 .profileImage {
   width: auto;
   height: 600px;
+}
+.start {
+  opacity: 0;
+}
+.aboutAnime {
+  transition: all 1s 0s ease;
+  opacity: 1;
 }
 #box1 #box2 {
   height: 100px;
