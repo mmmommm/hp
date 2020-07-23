@@ -1,8 +1,8 @@
 <template>
     <section>
       <div>
-        <header class='container mx-auto text-white'>
-          <div class='h-16 px-2 flex justify-between items-center fixed w-full left-0 bg-black md:px-12'>
+        <header class='text-white'>
+          <div class='h-16 px-2 flex justify-between items-center w-screen fixed bg-black md:px-12'>
             <h1 class='text-2xl font-semibold md:text-l'>KISSE PORTFOLIO</h1>
             <div class='hidden md:block'>
               <ul class='md:flex py-4 md:mr-12'>
@@ -30,16 +30,16 @@
             </button>
           </div>
           <transition name='navi'>
-            <div v-show='active' class='mt-16 fixed w-full bg-gray-900 left-0'>
-              <ul class='md:flex md:justify-end py-4 md:mr-12'>
-                <li class='border-b md:border-none' @click='activeOff'>
-                  <nuxt-link to='/' class='px-8'>Home</nuxt-link>
+            <div v-show='active' class='mt-16 fixed w-screen bg-gray-900'>
+              <ul class='text-center'>
+                <li class='border-b' @click='activeOff'>
+                  <nuxt-link to='/' class='text-2xl'>Home</nuxt-link>
                 </li>
-                <li class='border-b md:border-none' @click='activeOff'>
-                  <nuxt-link to='/aboutDetail' class='px-8'>About</nuxt-link>
+                <li class='border-b' @click='activeOff'>
+                  <nuxt-link to='/aboutDetail' class='text-2xl'>About</nuxt-link>
                 </li>
-                <li class='border-b md:border-none' @click='activeOff'>
-                  <nuxt-link to='/skillDetail' class='px-8'>Skill</nuxt-link>
+                <li class='border-b' @click='activeOff'>
+                  <nuxt-link to='/skillDetail' class='text-2xl'>Skill</nuxt-link>
                 </li>
                 <!-- <li class='border-b md:border-none' @click='activeOff'>
                   <nuxt-link to='/contact' class='px-8'>Contact</nuxt-link>
