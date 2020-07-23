@@ -6,13 +6,13 @@
         <img src='~/assets/image/Bicycle2.jpeg' alt='父母ヶ浜で撮った自転車と一緒に撮った画像' class='h-1/2 homeImage2'>
       </div>
       <div class='md:hidden'>
-        <img src='~assets/image/homeImage.jpeg' alt='父母ヶ浜で撮った自転車と一緒に撮った画像'>
+        <img src='~assets/image/smhome.jpeg' alt='父母ヶ浜で撮った自転車と一緒に撮った画像'>
       </div>
     </div>
-    <div class='md:1/2 hidden md:block'>
-      <p class='md:text-6xl md:ml-48 text-center welcome'>Welcome</p>
-      <p class='md:text-6xl md:ml-48 text-center to'>to</p>
-      <div class='flex flex-no-wrap md:ml-32 md:pb-24'>
+    <div class='md:1/2'>
+      <p class='md:text-6xl md:ml-48 text-center welcome hidden md:block'>Welcome</p>
+      <p class='md:text-6xl md:ml-48 text-center to hidden md:block'>to</p>
+      <div class='flex flex-no-wrap mt-12 pl-4 md:ml-32 md:pb-24 border-b-2 md:border-0'>
         <div v-for='(text, i) in texts' :key='i'>
           <p class='text-xl md:text-4xl title ml-2'>{{ text }}</p>
         </div>

@@ -49,8 +49,8 @@
           <img src='~/assets/image/circleImage.png' alt='伏見稲荷で撮った画像を丸く切り抜いたもの'>
         </div>
       </div>
-      <div class='hidden md:block' id='box1'></div>
-      <div class='hidden md:block' id='box2'></div>
+      <div id='box1'></div>
+      <div id='box2'></div>
     </section>
 </template>
 <script lang='ts'>

@@ -24,8 +24,8 @@
         </div>
       </div>
     </div>
-    <div class='hidden md:block' id='space1'/>
-    <div class='hidden md:block' id='space2'/>
+    <div id='space1'/>
+    <div id='space2'/>
   </section>
 </template>
 <script lang='ts'>
