@@ -8,7 +8,7 @@
         v-for='(skillDetail, i) in skillDetails'
         :key='skillDetail.id'
         :data-index='i'
-        class='w-full md:w-1/2 py-4 my-2'
+        class='w-screen md:w-1/2 py-4 my-2'
       >
         <div>
           <div class='flex skillTitle'>

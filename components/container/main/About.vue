@@ -1,7 +1,7 @@
 <template>
     <section id='about'>
       <div class='introduce-wrapper lg:flex pt-6 md:pt-0'>
-        <div class='w-full lg:w-1/2'>
+        <div class='w-screen lg:w-1/2'>
           <div id='about-start' class="about-start">
             <div class='text-5xl md:text-6xl text-center md:mt-24 md:ml-48'>
               <h1>ABOUT</h1>
@@ -49,8 +49,8 @@
           <img src='~/assets/image/circleImage.png' alt='伏見稲荷で撮った画像を丸く切り抜いたもの'>
         </div>
       </div>
-      <div id='box1'></div>
-      <div id='box2'></div>
+      <div id='box1' class='w-screen'></div>
+      <div id='box2' class='w-screen'></div>
     </section>
 </template>
 <script lang='ts'>

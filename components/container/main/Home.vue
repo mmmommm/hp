@@ -9,10 +9,10 @@
         <img src='~assets/image/smhome.jpeg' alt='父母ヶ浜で撮った自転車と一緒に撮った画像'>
       </div>
     </div>
-    <div class='md:1/2'>
-      <p class='md:text-6xl md:ml-48 text-center welcome hidden md:block'>Welcome</p>
-      <p class='md:text-6xl md:ml-48 text-center to hidden md:block'>to</p>
-      <div class='flex flex-no-wrap -mt-16 md:mt-0 pl-4 md:ml-32 md:pb-24 text-white md:text-black'>
+    <div class='md:w-1/2'>
+      <p class='md:text-6xl md:ml-32 text-center welcome hidden md:block'>Welcome</p>
+      <p class='md:text-6xl md:ml-32 text-center to hidden md:block'>to</p>
+      <div class='flex flex-no-wrap -mt-16 md:mt-0 pl-4 md:ml-48 md:pb-24 text-white md:text-black'>
         <div v-for='(text, i) in texts' :key='i'>
           <p class='text-xl md:text-4xl title ml-2'>{{ text }}</p>
         </div>

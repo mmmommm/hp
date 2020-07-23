@@ -1,5 +1,5 @@
 <template>
-  <div class='h-full w-full'>
+  <div class='h-full w-screen'>
     <div class='pt-24 md:pt-16 bg-gray-700'>
       <h1 class='text-4xl md:text-5xl text-white ml-16 md:ml-24'>ABOUT</h1>
       <div class='mt-4 px-4 py-6 md:ml-24'>

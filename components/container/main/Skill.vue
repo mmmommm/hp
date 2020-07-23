@@ -5,7 +5,7 @@
     </div>
     <div class='bg-black pb-40'>
       <div id="skill-start" class="skill-start">
-        <div class="w-full flex flex-wrap justify-center">
+        <div class="w-screen flex flex-wrap justify-center">
           <div
             v-for='(skillCard, i) in skillCards'
             :key='skillCard.id'
@@ -24,8 +24,8 @@
         </div>
       </div>
     </div>
-    <div id='space1'/>
-    <div id='space2'/>
+    <div id='space1' class='w-screen'/>
+    <div id='space2' class='w-screen'/>
   </section>
 </template>
 <script lang='ts'>
