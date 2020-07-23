@@ -23,7 +23,6 @@ import Work from '~/components/container/main/Work.vue';
 })
 export default class Index extends Vue{}
 </script>
-
 <style scoped>
 *{
   margin: 0;
