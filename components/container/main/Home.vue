@@ -46,7 +46,7 @@ export default class Home extends Vue {
 </script>
 <style scoped>
 .smimage, .lazyloading {
-  height: auto;
+  height: 600px;
   width: auto;
 }
 </style>
