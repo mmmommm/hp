@@ -21,14 +21,14 @@
               <div class='sm:w-1/3 lg:w-1/6'>
                 <a href='https://github.com/mmmommm/' target='_blank'>
                   <button class='py-2 px-4 rounded hover:opacity-75'>
-                    <img src='~/assets/icon/github.jpg' alt='githubのアイコン' class='github'>
+                    <img src='~/assets/icon/github.jpg' data-src='~/assets/icon/github.jpg' alt='githubのアイコン' class='github'>
                   </button>
                 </a>
               </div>
               <div class='sm:w-1/3 lg:w-1/6'>
                 <a href='https://twitter.com/kissessenose' target='_blank'>
                   <button class='py-2 px-4 rounded hover:opacity-75'>
-                    <img src='~/assets/icon/twitter.png' alt='twitterのアイコン' class ='twitter'>
+                    <img src='~/assets/icon/twitter.png' data-src='~/assets/icon/twitter.png' alt='twitterのアイコン' class ='twitter'>
                   </button>
                 </a>
               </div>
@@ -43,10 +43,10 @@
           </div>
         </div>
         <div class='hidden md:block lg:w-1/2 lg:ml-12'>
-          <img src='~/assets/image/profile.JPG' alt='伏見稲荷で撮った画像' class='profileImage'>
+          <img src='~/assets/image/profile.JPG' data-src='~/assets/image/profile.JPG' alt='伏見稲荷で撮った画像' class='profileImage'>
         </div>
         <div class='mt-4 ml-12 md:hidden'>
-          <img src='~/assets/image/circleImage.png' alt='伏見稲荷で撮った画像を丸く切り抜いたもの'>
+          <img src='~/assets/image/circleImage.png' data-src='~/assets/image/circleImage.png' alt='伏見稲荷で撮った画像を丸く切り抜いたもの' class="circleImage">
         </div>
       </div>
       <div id='box1' class='w-screen'></div>
@@ -55,6 +55,7 @@
 </template>
 <script lang='ts'>
 import { Vue, Component, Watch } from 'vue-property-decorator';
+import 'lazysizes'
 @Component
 export default class About extends Vue{
   positionY = 0
@@ -92,21 +93,25 @@ section{
 .introduce-wrapper {
   margin-bottom: 200px;
 }
-.github {
+.github .lazyloading {
   height: 40px;
   width: 40px;
 }
-.twitter {
+.twitter .lazyloading {
   height: 40px;
   width: 40px;
 }
-.profile {
+.profile .lazyloading {
   height: 200px;
   width: 200px;
 }
-.profileImage {
+.profileImage .lazyloading {
   width: auto;
   height: 600px;
+}
+.circleImage .lazyloading {
+  width: auto;
+  height: 150px;
 }
 .about-start {
   opacity: 0;

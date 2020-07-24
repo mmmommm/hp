@@ -7,8 +7,8 @@
       <!-- 将来的に公開するものが増えたらv-forで回す -->
       <div class='md:flex md:mx-4 my-4 py-2 md:border-2 md:border-black md:rounded'>
         <div class='w-screen md:w-1/2'>
-          <img src='~/assets/image/work.png' datasrc='~/assets/image/work.png' alt='brandmemoのホーム画像' class='workImage hidden md:block md:ml-4'>
-          <img src='~/assets/image/work.png' datasrc='~/assets/image/work.png' alt='brandmemoのホーム画像' class='smwork md:hidden'>
+          <img src='~/assets/image/work.png' data-src='~/assets/image/work.png' alt='brandmemoのホーム画像' class='workImage hidden md:block md:ml-4'>
+          <img src='~/assets/image/work.png' data-src='~/assets/image/work.png' alt='brandmemoのホーム画像' class='smwork md:hidden'>
         </div>
         <div class='w-screen lg:w-1/2'>
           <a :href='this.url' target='_blank'>
