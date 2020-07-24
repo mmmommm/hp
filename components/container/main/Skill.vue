@@ -15,7 +15,7 @@
             <div class='card md:border-2 border-white rounded my-2 md:px-2 py-4'>
               <nuxt-link to='/skillDetail'>
                 <div class='flex'>
-                  <img :src="require('~/static/skill/' + skillCard.src)" alt='それぞれの技術の画像' class='w-1/2 icon'/>
+                  <img :src="require('~/static/skill/' + skillCard.src)" alt='それぞれの技術の画像' class='w-1/2 icon' :datasrc="require('~/static/skill/' + skillCard.src)" />
                   <p class='text-base md:text-2xl ml-1 md:ml-4 text-white my-auto w-1/2'>{{ skillCard.name }}</p>
                 </div>
               </nuxt-link>
@@ -31,6 +31,7 @@
 <script lang='ts'>
 import { Vue, Component, Watch } from 'vue-property-decorator';
 import { skillCard } from '~/interface/skillCard';
+import 'lazysizes'
 @Component({
 })
 export default class Skill extends Vue {
@@ -105,7 +106,7 @@ export default class Skill extends Vue {
 }
 </script>
 <style scoped>
-.icon {
+.icon .lazyloading {
   width: auto;
   height: 80px;
 }

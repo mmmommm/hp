@@ -7,8 +7,8 @@
       <!-- 将来的に公開するものが増えたらv-forで回す -->
       <div class='md:flex md:mx-4 my-4 py-2 md:border-2 md:border-black md:rounded'>
         <div class='w-screen md:w-1/2'>
-          <img src='~/assets/image/work.png' alt='brandmemoのホーム画像' class='workImage hidden md:block md:ml-4'>
-          <img src='~/assets/image/work.png' alt='brandmemoのホーム画像' class='smwork md:hidden'>
+          <img src='~/assets/image/work.png' datasrc='~/assets/image/work.png' alt='brandmemoのホーム画像' class='workImage hidden md:block md:ml-4'>
+          <img src='~/assets/image/work.png' datasrc='~/assets/image/work.png' alt='brandmemoのホーム画像' class='smwork md:hidden'>
         </div>
         <div class='w-screen lg:w-1/2'>
           <a :href='this.url' target='_blank'>
@@ -24,6 +24,7 @@
 </template>
 <script lang='ts'>
 import { Vue, Component } from 'vue-property-decorator';
+import 'lazysizes'
 @Component
 export default class Work extends Vue {
     title = 'BRAND MEMO'
@@ -32,11 +33,11 @@ export default class Work extends Vue {
 }
 </script>
 <style scoped>
-.workImage {
+.workImage .lazyloading {
   width: 600px;
   height: auto;
 }
-.smwork {
+.smwork .lazyloading {
   width: 300px;
   height: auto;
 }
