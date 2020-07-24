@@ -93,23 +93,23 @@ section{
 .introduce-wrapper {
   margin-bottom: 200px;
 }
-.github .lazyloading {
+.github, .lazyloading {
   height: 40px;
   width: 40px;
 }
-.twitter .lazyloading {
+.twitter, .lazyloading {
   height: 40px;
   width: 40px;
 }
-.profile .lazyloading {
+.profile, .lazyloading {
   height: 200px;
   width: 200px;
 }
-.profileImage .lazyloading {
+.profileImage, .lazyloading {
   width: auto;
   height: 600px;
 }
-.circleImage .lazyloading {
+.circleImage, .lazyloading {
   width: auto;
   height: 150px;
 }

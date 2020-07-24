@@ -33,11 +33,11 @@ export default class Work extends Vue {
 }
 </script>
 <style scoped>
-.workImage .lazyloading {
+.workImage, .lazyloading {
   width: 600px;
   height: auto;
 }
-.smwork .lazyloading {
+.smwork, .lazyloading {
   width: 300px;
   height: auto;
 }

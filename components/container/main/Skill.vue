@@ -106,7 +106,7 @@ export default class Skill extends Vue {
 }
 </script>
 <style scoped>
-.icon .lazyloading {
+.icon, .lazyloading {
   width: auto;
   height: 80px;
 }
