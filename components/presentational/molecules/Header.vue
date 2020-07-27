@@ -15,9 +15,6 @@
               <li class='border-b md:border-none'>
                 <nuxt-link to='/skillDetail' class='px-8'>Skill</nuxt-link>
               </li>
-              <!-- <li class='border-b md:border-none' @click='activeOff'>
-                <nuxt-link to='/contact' class='px-8'>Contact</nuxt-link>
-              </li> -->
             </ul>
           </div>
           <button @click='activeToggle' class='md:hidden'>
@@ -41,9 +38,6 @@
               <li class='border-b' @click='activeOff'>
                 <nuxt-link to='/skillDetail' class='text-2xl'>Skill</nuxt-link>
               </li>
-              <!-- <li class='border-b md:border-none' @click='activeOff'>
-                <nuxt-link to='/contact' class='px-8'>Contact</nuxt-link>
-              </li> -->
             </ul>
           </div>
         </transition>
