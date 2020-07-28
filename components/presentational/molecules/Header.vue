@@ -51,6 +51,26 @@ import { Vue, Component } from 'vue-property-decorator';
 @Component
 export default class Header extends Vue{
   active = false
+  HEADER_MAX_HEIGHT = 60
+  isOpen = true
+  height() {
+    return this.isOpen ? this.HEADER_MAX_HEIGHT : 0;
+  }
+  itemStyle() {
+    const opacity = this.isOpen ? 1 : 0;
+    const scale   = this.isOpen ? 1 : 0;
+    return {
+      height: `${this.height}px`,
+      transform: `scale(${scale}, ${scale})`,
+      opacity,
+    };
+  }
+  headStyle() {
+    return {
+      height: `${this.height}px`,
+      background: this.isOpen ? '#fff' : '#fefef0',
+    };
+  }
   activeToggle() {
     this.active = !this.active
   }
