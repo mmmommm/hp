@@ -51,7 +51,7 @@ import { Vue, Component } from 'vue-property-decorator';
 @Component
 export default class Header extends Vue{
   active = false
-  HEADER_MAX_HEIGHT = 60
+  readonly HEADER_MAX_HEIGHT = 60
   isOpen = true
   height() {
     return this.isOpen ? this.HEADER_MAX_HEIGHT : 0;

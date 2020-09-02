@@ -27,9 +27,9 @@ import { Vue, Component } from 'vue-property-decorator';
 import 'lazysizes'
 @Component
 export default class Work extends Vue {
-    title = 'BRAND MEMO'
-    content = '株式投資の銘柄を選ぶために企業の分析やチャートの状態についてメモできるように作ったウェブサイトです。'
-    url = 'https://horizontal-ward-253909.web.app/'
+  readonly title = 'BRAND MEMO'
+  readonly content = '株式投資の銘柄を選ぶために企業の分析やチャートの状態についてメモできるように作ったウェブサイトです。'
+  readonly url = 'https://horizontal-ward-253909.web.app/'
 }
 </script>
 <style scoped>

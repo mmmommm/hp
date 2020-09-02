@@ -1,5 +1,5 @@
 export interface skillCard {
-  id: number
-  name: string
-  src: string
+  readonly id: number
+  readonly name: string
+  readonly src: string
 }
