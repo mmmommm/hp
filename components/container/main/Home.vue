@@ -25,7 +25,7 @@ import { Vue, Component } from 'vue-property-decorator';
 import { gsap } from 'gsap'
 @Component
 export default class Home extends Vue {
-  texts: string[] = [
+  readonly texts: string[] = [
     'K','I','S','S','E',' ', ' ','P','O','R','T','F','O','R','I','O'
   ]
   mounted() {
