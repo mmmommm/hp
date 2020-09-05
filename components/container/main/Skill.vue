@@ -61,27 +61,32 @@ export default class Skill extends Vue {
       src: 'nuxt.png'
     },
     {
-      id: 5,
+      id:5,
+      name: 'React/Next',
+      src: 'react.jpg'
+    },
+    {
+      id: 6,
       name: 'GitHub',
       src: 'github.jpg'
     },
     {
-      id: 6,
+      id: 7,
       name: 'Docker',
       src: 'docker.png'
     },
     {
-      id: 7,
+      id: 8,
       name: 'CirclCI',
       src: 'circleci.png'
     },
     {
-      id: 8,
+      id: 9,
       name: 'Firebase',
       src: 'firebase.png'
     },
     {
-      id: 9,
+      id: 10,
       name: 'Golang',
       src: 'go.png'
     }
