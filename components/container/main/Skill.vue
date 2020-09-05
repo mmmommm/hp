@@ -41,44 +41,54 @@ export default class Skill extends Vue {
   }
   skillCards: skillCard[] = [
     {
-      id: 8,
+      id: 1,
       name: 'HTML',
       src: 'html.png'
     },
     {
-      id: 7,
+      id: 2,
       name: 'CSS',
       src: 'css.png'
     },
     {
-      id: 6,
+      id: 3,
       name: 'Typescript',
       src: 'ts.png'
     },
     {
-      id: 5,
+      id: 4,
       name: 'Vue/Nuxt',
       src: 'nuxt.png'
     },
     {
-      id: 4,
+      id:5,
+      name: 'React/Next',
+      src: 'react.jpg'
+    },
+    {
+      id: 6,
       name: 'GitHub',
       src: 'github.jpg'
     },
     {
-      id: 3,
+      id: 7,
       name: 'Docker',
       src: 'docker.png'
     },
     {
-      id: 2,
+      id: 8,
       name: 'CirclCI',
       src: 'circleci.png'
     },
     {
-      id: 1,
+      id: 9,
       name: 'Firebase',
       src: 'firebase.png'
+    },
+    {
+      id: 10,
+      name: 'Golang',
+      src: 'go.png'
     }
   ]
   mounted() {
