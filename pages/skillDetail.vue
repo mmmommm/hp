@@ -32,61 +32,69 @@ import { gsap } from 'gsap'
 export default class SkillDetail extends Vue {
   skillDetails: skillDetail[] = [
     {
-      id: 8,
+      id: 1,
       name: 'HTML',
       src: 'html.png',
       period: '一年ちょっと',
       description: 'プログラミングを学び始めたときに最初に触ったマークアップ言語です。特にいうことないです。'
     },
     {
-      id: 7,
+      id: 2,
       name: 'CSS',
       src: 'css.png',
       period: '一年ちょっと',
       description: 'HTMLと同じ時期に触り始めました、vuetifyとかのUIフレームワークに逃げてしまっていたので、これから深く理解していきたいです。'
     },
     {
-      id: 6,
+      id: 3,
       name: 'Typescript',
       src: 'ts.png',
       period: '半年ぐらい',
       description: 'vueとかのフレームワークを使用するときに使っているので、js自体にとても詳しいってわけじゃないところ直したい。。。'
     },
     {
-      id: 5,
+      id: 4,
       name: 'Vue/Nuxt',
       src: 'nuxt.png',
       period: '一年ぐらい',
       description: '基本的にフロントエンドはこれで書いています、大抵の処理はかけますがコンポーネントの分割とかが苦手なのをどうにかしたいです。'
     },
     {
-      id: 4,
+      id: 5,
       name: 'GitHub',
       src: 'github.jpg',
       period: '一年ちょっと',
       description: '基本的な機能は使えるつもりですが、rebaseとかあんまり自信がないです、どっかでまとめてやりたいです。'
     },
     {
-      id: 3,
+      id: 6,
       name: 'Docker',
       src: 'docker.png',
       period: '三ヶ月ぐらい',
       description: '開発環境整えるぐらいしかできないです、これもやらなきゃいけないとは思ってるんですけどね。。。'
     },
     {
-      id: 2,
+      id: 7,
       name: 'CirclCI',
       src: 'circleci.png',
       period: '三ヶ月ぐらい',
       description: '自分で作ったウェブアプリを自動デプロイするのに使いました、書き方はわかります。'
     },
     {
-      id: 1,
+      id: 8,
       name: 'Firebase',
       src: 'firebase.png',
       period: '一年ちょっと',
       description: 'ほとんどサーバーサイドの機能を任せています、大体の機能は使えるつもりですがSQLの知識がなさすぎてfirestoreの設計ができません。。。'
+    },
+    {
+      id: 9,
+      name: 'Golang',
+      src: 'go.png',
+      period: '三ヶ月ぐらい',
+      description: '最近触り始めました、slackbotを作成しました、これからしっかりと学んでいきたいです。'
     }
+
   ]
   mounted() {
     document.querySelectorAll('.skillTitle').forEach((skillTitle, i) => {
