@@ -81,6 +81,9 @@ export default class Header extends Vue{
 </script>
 
 <style scoped>
+div {
+  z-index: 1000;
+}
 .navi-enter, .navi-leave-to {
   opacity: 0;
 }
