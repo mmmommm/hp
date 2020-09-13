@@ -67,35 +67,35 @@ export default class SkillDetail extends Vue {
       description: '友人と作成しているウェブアプリのフロントエンド部分で使用しています、まだまだ理解が浅いですが、知識を深めていきたいです。'
     },
     {
-      id: 5,
+      id: 6,
       name: 'GitHub',
       src: 'github.jpg',
       period: '一年ちょっと',
       description: '基本的な機能は使えるつもりですが、rebaseとかあんまり自信がないです、どっかでまとめてやりたいです。'
     },
     {
-      id: 6,
+      id: 7,
       name: 'Docker',
       src: 'docker.png',
       period: '三ヶ月ぐらい',
       description: '開発環境整えるぐらいしかできないです、これもやらなきゃいけないとは思ってるんですけどね。。。'
     },
     {
-      id: 7,
+      id: 8,
       name: 'CirclCI',
       src: 'circleci.png',
       period: '三ヶ月ぐらい',
       description: '自分で作ったウェブアプリを自動デプロイするのに使いました、書き方はわかります。'
     },
     {
-      id: 8,
+      id: 9,
       name: 'Firebase',
       src: 'firebase.png',
       period: '一年ちょっと',
       description: 'ほとんどサーバーサイドの機能を任せています、大体の機能は使えるつもりですがSQLの知識がなさすぎてfirestoreの設計ができません。。。'
     },
     {
-      id: 9,
+      id: 10,
       name: 'Golang',
       src: 'go.png',
       period: '三ヶ月ぐらい',
