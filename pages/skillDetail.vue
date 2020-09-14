@@ -64,14 +64,14 @@ export default class SkillDetail extends Vue {
       name: 'React/Next',
       src: 'react.jpg',
       period: '一ヶ月ぐらい',
-      description: '友人と作成しているウェブアプリのフロントエンド部分で使用しています、まだまだ理解が浅いですが、知識を深めていきたいです。'
+      description: '友人と作成しているウェブアプリのフロントエンド部分で使用しています、まだまだ理解が浅いですが、深く理解したいです。'
     },
     {
       id: 6,
-      name: 'GitHub',
+      name: 'Git',
       src: 'github.jpg',
       period: '一年ちょっと',
-      description: '基本的な機能は使えるつもりですが、rebaseとかあんまり自信がないです、どっかでまとめてやりたいです。'
+      description: '基本的な機能は使えるつもりです、だいぶ慣れては来ましたがたまに怖い時があります。。。'
     },
     {
       id: 7,
