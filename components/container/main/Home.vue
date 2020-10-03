@@ -17,6 +17,12 @@
           <p class='text-xl md:text-4xl title ml-2'>{{ text }}</p>
         </div>
       </div>
+      <div class='hidden md:block'>
+        <a class='btn_scroll'>
+        <span></span>
+        scroll
+        </a>
+      </div>
     </div>
   </section>
 </template>
@@ -52,5 +58,48 @@ export default class Home extends Vue {
 .smimage, .lazyloading {
   height: 700px;
   width: 100%;
+}
+a.btn_scroll {
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  z-index: 2px;
+  display: inline-block;
+  transform: translate(0, -50%);
+  text-decoration: none;
+  padding-top: 60px;
+  color: #333;
+  margin-left: 400px;
+}
+a.btn_scroll span {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 30px;
+  height: 50px;
+  margin-left: -15px;
+  border: 2px solid #333;
+  border-radius: 50px;
+  box-sizing: border-box;
+}
+a.btn_scroll span::before {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  content: '';
+  width: 6px;
+  height: 6px;
+  margin-left: -3px;
+  background-color: #333;
+  border-radius: 100%;
+  -webkit-animation: sdb 2s infinite;
+  animation: sdb 2s infinite;
+  box-sizing: border-box;
+}
+@keyframes sdb {
+  100% {
+    top: 30px;
+    opacity: 0;
+  }
 }
 </style>
