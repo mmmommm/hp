@@ -1,7 +1,7 @@
 <template>
-  <div class='pt-24 md:pt-16 bg-gray-900 border-b'>
+  <div class='pt-24 md:pt-16 bg-pink-200 border-b'>
     <div>
-      <h1 class='text-3xl md:text-5xl text-white ml-16 md:ml-24'>SKILLS</h1>
+      <h1 class='text-3xl md:text-5xl text-gray-700 ml-16 md:ml-24'>SKILLS</h1>
     </div>
     <div class='flex flex-wrap mt-4 md:mt-8 px-4 md:px-40'>
       <div
@@ -13,11 +13,11 @@
         <div>
           <div class='flex skillTitle'>
             <img :src="require('~/static/skill/' + skillDetail.src)" alt='' class='w-1/2 icon'/>
-            <p class='text-base md:text-2xl ml-1 md:ml-4 text-white my-auto w-1/2'>{{ skillDetail.name }}</p>
+            <p class='text-base md:text-2xl ml-1 md:ml-4 text-gray-700 my-auto w-1/2'>{{ skillDetail.name }}</p>
           </div>
           <div class='skill-talk'>
-            <p class='text-white'>期間：{{ skillDetail.period }}</p>
-            <p class='text-white mx-4'>{{ skillDetail.description }}</p>
+            <p class='text-gray-700'>期間：{{ skillDetail.period }}</p>
+            <p class='text-gray-700 mx-4'>{{ skillDetail.description }}</p>
           </div>
         </div>
       </div>

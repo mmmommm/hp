@@ -1,9 +1,9 @@
 <template>
-  <section class='py-8 bg-gray-900 md:px-64'>
-    <div class='h-24 mx-auto py-8 bg-black'>
-        <h1 class='text-2xl md:text-3xl text-white'>KISSE PORTFOLIO</h1>
+  <section class='py-8 bg-pink-300 md:px-64'>
+    <div class='h-24 mx-auto py-8 bg-gray-400'>
+        <h1 class='text-2xl md:text-3xl text-gray-700'>KISSE PORTFOLIO</h1>
     </div>
-    <footer class="text-white text-center pt-6 text-xs md:text-xl">
+    <footer class="text-gray-700 text-center pt-6 text-xs md:text-xl">
         Copyright©︎2020 KISSEPORTFOLIO All Rights Reserved
     </footer>
   </section>
