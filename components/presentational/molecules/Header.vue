@@ -2,21 +2,21 @@
   <section>
     <div>
       <header class='text-gray-700'>
-        <div class='h-16 px-2 flex justify-between items-center w-screen fixed bg-pink-300 md:px-12'>
+        <div class='h-16 px-2 flex justify-between items-center w-screen fixed bg-red-200 md:px-12'>
           <h1 class='text-2xl font-semibold md:text-l text-gray-700'>KISSE PORTFOLIO</h1>
           <div class='hidden md:block'>
             <ul class='md:flex md:mr-12'>
-              <nuxt-link to='/' class='px-8 hover:bg-pink-200 transition duration-500 ease-in-out'>
+              <nuxt-link to='/' class='px-8 hover:bg-pink-100 transition duration-500 ease-in-out'>
                 <li class='h-16 w-16 pt-4 border-b md:border-none pl-2'>
                   Home
                 </li>
               </nuxt-link>
-              <nuxt-link to='/aboutDetail' class='px-8 hover:bg-pink-200 transition duration-500 ease-in-out'>
+              <nuxt-link to='/aboutDetail' class='px-8 hover:bg-pink-100 transition duration-500 ease-in-out'>
                 <li class='h-16 w-16 pt-4 border-b md:border-none pl-2'>
                   About
                 </li>
               </nuxt-link>
-              <nuxt-link to='/skillDetail' class='px-8 hover:bg-pink-200 transition duration-500 ease-in-out'>
+              <nuxt-link to='/skillDetail' class='px-8 hover:bg-pink-100 transition duration-500 ease-in-out'>
                 <li class='h-16 w-16 pt-4 border-b md:border-none pl-4'>
                   Skill
                 </li>

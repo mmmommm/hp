@@ -1,6 +1,6 @@
 <template>
   <div class='h-full w-screen'>
-    <div class='pt-24 md:pt-16 bg-pink-200'>
+    <div class='pt-24 md:pt-16 bg-pink-100'>
       <h1 class='text-4xl md:text-5xl text-gray-700 ml-16 md:ml-24'>ABOUT</h1>
       <div class='mt-4 px-4 py-6 md:ml-24'>
         <p class='mt-4 text-gray-700 md:text-base about-first'>
