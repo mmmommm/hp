@@ -1,9 +1,9 @@
 <template>
   <section id='skill'>
-    <div class='text-white text-center p-4 mx-auto md:py-8 bg-black'>
-      <h1 class='text-5xl md:text-6xl'>SKILL</h1>
+    <div class='text-white text-center p-4 mx-auto md:py-8 bg-gray-900'>
+      <h1 class='text-5xl md:text-6xl text-pink-100'>SKILL</h1>
     </div>
-    <div class='bg-black pb-40'>
+    <div class='bg-gray-900 pb-40'>
       <div id="skill-start" class="skill-start">
         <div class="w-screen flex flex-wrap justify-center">
           <div
@@ -12,11 +12,11 @@
             :data-index='i'
             class='w-1/2 md:w-1/5 md:mr-2'
           >
-            <div class='card md:border-2 border-white rounded my-2 md:px-2 py-4'>
+            <div class='card md:border-2 border-white rounded my-2 md:px-2 py-4 transition duration-500 ease-in-out hover:bg-gray-700'>
               <nuxt-link to='/skillDetail'>
                 <div class='flex'>
                   <img :src="require('~/static/skill/' + skillCard.src)" alt='それぞれの技術の画像' class='w-1/2 icon' :data-src="require('~/static/skill/' + skillCard.src)" />
-                  <p class='text-base md:text-2xl ml-1 md:ml-4 text-white my-auto w-1/2'>{{ skillCard.name }}</p>
+                  <p class='text-base md:text-2xl ml-1 md:ml-4 text-white my-auto w-1/2 text-pink-100'>{{ skillCard.name }}</p>
                 </div>
               </nuxt-link>
             </div>
@@ -144,6 +144,6 @@ export default class Skill extends Vue {
   height: 0;
   border-style: solid;
   border-width: 100px 50vw;
-  border-color: black black transparent transparent;
+  border-color: #1A202C #1A202C #FFF5F7 #FFF5F7;
 }
 </style>

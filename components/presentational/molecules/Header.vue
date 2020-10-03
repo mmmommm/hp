@@ -1,20 +1,26 @@
 <template>
   <section>
     <div>
-      <header class='text-white'>
-        <div class='h-16 px-2 flex justify-between items-center w-screen fixed bg-black md:px-12'>
-          <h1 class='text-2xl font-semibold md:text-l'>KISSE PORTFOLIO</h1>
+      <header class='text-gray-700'>
+        <div class='h-16 px-2 flex justify-between items-center w-screen fixed bg-red-200 md:px-12'>
+          <h1 class='text-2xl font-semibold md:text-l text-gray-700'>KISSE PORTFOLIO</h1>
           <div class='hidden md:block'>
-            <ul class='md:flex py-4 md:mr-12'>
-              <li class='border-b md:border-none'>
-                <nuxt-link to='/' class='px-8'>Home</nuxt-link>
-              </li>
-              <li class='border-b md:border-none' >
-                <nuxt-link to='/aboutDetail' class='px-8'>About</nuxt-link>
-              </li>
-              <li class='border-b md:border-none'>
-                <nuxt-link to='/skillDetail' class='px-8'>Skill</nuxt-link>
-              </li>
+            <ul class='md:flex md:mr-12'>
+              <nuxt-link to='/' class='px-8 hover:bg-pink-100 transition duration-500 ease-in-out'>
+                <li class='h-16 w-16 pt-4 border-b md:border-none pl-2'>
+                  Home
+                </li>
+              </nuxt-link>
+              <nuxt-link to='/aboutDetail' class='px-8 hover:bg-pink-100 transition duration-500 ease-in-out'>
+                <li class='h-16 w-16 pt-4 border-b md:border-none pl-2'>
+                  About
+                </li>
+              </nuxt-link>
+              <nuxt-link to='/skillDetail' class='px-8 hover:bg-pink-100 transition duration-500 ease-in-out'>
+                <li class='h-16 w-16 pt-4 border-b md:border-none pl-4'>
+                  Skill
+                </li>
+              </nuxt-link>
             </ul>
           </div>
           <button @click='activeToggle' class='md:hidden'>

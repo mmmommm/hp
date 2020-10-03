@@ -1,5 +1,5 @@
 <template>
-  <section id='home' class='md:h-screen md:flex md:items-center'>
+  <section id='home' class='md:h-screen md:flex md:items-center bg-pink-100'>
     <div class='md:w-1/2'>
       <div class='hidden md:block flex md:ml-48 md:mt-32 lg:mt-12'>
         <img src='~/assets/image/Bicycle1.JPG' alt='鹿児島で撮った自転車二台の映った画像' class='h-1/2 homeImage1 object-scale-down'>
@@ -10,9 +10,9 @@
       </div>
     </div>
     <div class='md:w-1/2'>
-      <p class='md:text-6xl md:ml-32 text-center welcome hidden md:block'>Welcome</p>
-      <p class='md:text-6xl md:ml-32 text-center to hidden md:block'>to</p>
-      <div class='flex flex-no-wrap -mt-16 md:mt-0 pl-4 md:ml-48 md:pb-24 text-white md:text-black'>
+      <p class='md:text-6xl md:ml-32 text-center welcome hidden md:block text-gray-700'>Welcome</p>
+      <p class='md:text-6xl md:ml-32 text-center to hidden md:block text-gray-700'>to</p>
+      <div class='flex flex-no-wrap -mt-16 md:mt-0 pl-4 md:ml-48 md:pb-24 text-pink-100 md:text-gray-700'>
         <div v-for='(text, i) in texts' :key='i'>
           <p class='text-xl md:text-4xl title ml-2'>{{ text }}</p>
         </div>
