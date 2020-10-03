@@ -1,12 +1,12 @@
 <template>
-  <section id='about'>
+  <section id='about' class='bg-pink-100'>
     <div class='introduce-wrapper lg:flex pt-6 md:pt-0'>
       <div class='w-screen lg:w-1/2'>
         <div id='about-start' class="about-start">
-          <div class='text-5xl md:text-6xl text-center md:mt-24 md:ml-48'>
+          <div class='text-5xl md:text-6xl text-center md:mt-24 md:ml-48 text-gray-700'>
             <h1>ABOUT</h1>
           </div>
-          <div class='mt-4 px-4 md:ml-24 box'>
+          <div class='mt-4 px-4 md:ml-24 box text-gray-700'>
             <p class='mt-4 md:text-base'>
               同志社大学商学部三回きっせです。簿記会計・企業経営を<br>
               専攻しておりマーケティングのゼミに所属しています。<br>
@@ -34,7 +34,7 @@
             </div>
             <div class='sm:w-1/3 lg:w-1/6 ml-4 md:ml-0 mt-2'>
               <nuxt-link to='/aboutDetail'>
-                <button class='duration-500 ease-in-out bg-transparent text-black-700 font-semibold hover:text-white hover:bg-gray-600 py-2 px-4 border border-black-500 rounded'>
+                <button class='duration-500 ease-in-out bg-transparent text-black-700 font-semibold hover:text-white hover:bg-pink-300 py-2 px-4 border border-black-500 rounded'>
                   more ＞
                 </button>
               </nuxt-link>
@@ -125,7 +125,7 @@ section{
 }
 #box1 {
   position: relative;
-  background-color: white;
+  background-color: #FFF5F7;
   margin-top: 100px;
 }
 #box1::before {
@@ -138,6 +138,6 @@ section{
   height: 0;
   border-style: solid;
   border-width: 100px 50vw ;
-  border-color: transparent black black transparent;
+  border-color: #FFF5F7 #1A202C #1A202C #FFF5F7;
 }
 </style>
