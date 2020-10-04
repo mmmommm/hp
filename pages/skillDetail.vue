@@ -1,7 +1,7 @@
 <template>
   <div class='pt-24 md:pt-16 bg-pink-100 border-b'>
     <div>
-      <h1 class='text-3xl md:text-5xl text-gray-700 ml-16 md:ml-24'>SKILLS</h1>
+      <h1 class='text-3xl md:text-5xl text-gray-700 ml-16 md:ml-24 font-mono'>SKILLS</h1>
     </div>
     <div class='flex flex-wrap mt-4 md:mt-8 px-4 md:px-40'>
       <div

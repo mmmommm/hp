@@ -1,7 +1,7 @@
 <template>
   <section class='py-8 bg-red-200 md:px-64'>
     <div class='h-24 mx-auto py-8 bg-pink-100'>
-        <h1 class='text-2xl md:text-3xl text-gray-700'>KISSE PORTFOLIO</h1>
+        <h1 class='text-2xl md:text-3xl text-gray-700 font-mono'>KISSE PORTFOLIO</h1>
     </div>
     <footer class="text-gray-700 text-center pt-6 text-xs md:text-xl">
         Copyright©︎2020 KISSEPORTFOLIO All Rights Reserved

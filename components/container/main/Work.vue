@@ -2,7 +2,7 @@
   <section id='work' class='h-auto md:h-screen bg-pink-100'>
     <div class='pt-12 md:pt-24'>
       <div class='pb-8'>
-        <h1 class='ml-4 md:ml-12 text-5xl md:text-6xl text-gray-700'>WORK</h1>
+        <h1 class='ml-4 md:ml-12 text-5xl md:text-6xl text-gray-700 font-mono'>WORK</h1>
       </div>
       <!-- 将来的に公開するものが増えたらv-forで回す -->
       <div class='md:flex md:mx-4 my-4 py-2 md:border-2 md:border-black md:rounded'>

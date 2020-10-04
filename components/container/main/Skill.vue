@@ -1,7 +1,7 @@
 <template>
   <section id='skill'>
     <div class='text-white text-center p-4 mx-auto md:py-8 bg-gray-900'>
-      <h1 class='text-5xl md:text-6xl text-pink-100'>SKILL</h1>
+      <h1 class='text-5xl md:text-6xl text-pink-100 font-mono'>SKILL</h1>
     </div>
     <div class='bg-gray-900 pb-40'>
       <div id="skill-start" class="skill-start">

@@ -9,16 +9,16 @@
         <img src='~assets/image/smhome.jpeg' data-src='~assets/image/smhome.jpeg' alt='父母ヶ浜で撮った自転車と一緒に撮った画像' class='smimage'>
       </div>
     </div>
-    <div class='md:w-1/2'>
-      <p class='md:text-6xl md:ml-32 text-center welcome hidden md:block text-gray-700'>Welcome</p>
-      <p class='md:text-6xl md:ml-32 text-center to hidden md:block text-gray-700'>to</p>
+    <div class='md:w-1/2 text-center'>
+      <p class='md:text-6xl welcome hidden md:block text-gray-700'>Welcome</p>
+      <p class='md:text-6xl to hidden md:block text-gray-700'>to</p>
       <div class='flex flex-no-wrap -mt-16 md:mt-0 pl-4 md:ml-48 md:pb-24 text-pink-100 md:text-gray-700'>
         <div v-for='(text, i) in texts' :key='i'>
-          <p class='text-xl md:text-4xl title ml-2'>{{ text }}</p>
+          <p class='text-xl md:text-4xl title ml-1'>{{ text }}</p>
         </div>
       </div>
-      <div class='hidden md:block'>
-        <a class='btn_scroll'>
+      <div>
+        <a class='btn_scroll ml-16 md:ml-32'>
         <span></span>
         scroll
         </a>
@@ -62,14 +62,13 @@ export default class Home extends Vue {
 a.btn_scroll {
   position: absolute;
   bottom: -15px;
-  left: 50%;
+  left: 65%;
   z-index: 2px;
   display: inline-block;
   transform: translate(0, -50%);
   text-decoration: none;
   padding-top: 60px;
-  color: #333;
-  margin-left: 400px;
+  color: #feb2b2;
 }
 a.btn_scroll span {
   position: absolute;
@@ -78,7 +77,7 @@ a.btn_scroll span {
   width: 30px;
   height: 50px;
   margin-left: -15px;
-  border: 2px solid #333;
+  border: 2px solid #feb2b2;
   border-radius: 50px;
   box-sizing: border-box;
 }
@@ -90,7 +89,7 @@ a.btn_scroll span::before {
   width: 6px;
   height: 6px;
   margin-left: -3px;
-  background-color: #333;
+  background-color: #feb2b2;
   border-radius: 100%;
   -webkit-animation: sdb 2s infinite;
   animation: sdb 2s infinite;
