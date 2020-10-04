@@ -17,7 +17,7 @@
                 </li>
               </nuxt-link>
               <nuxt-link to='/skillDetail' class='px-8 hover:bg-pink-100 transition duration-500 ease-in-out'>
-                <li class='h-16 w-16 pt-4 border-b md:border-none pl-4 font-mono'>
+                <li class='h-16 w-16 pt-4 border-b md:border-none pl-2 font-mono'>
                   Skill
                 </li>
               </nuxt-link>
@@ -35,15 +35,21 @@
         <transition name='navi'>
           <div v-show='active' class='mt-16 fixed h-48 w-48 bg-red-300 right-0 mr-4'>
             <ul class='text-center font-mono'>
-              <li @click='activeOff' class='mt-6'>
-                <nuxt-link to='/' class='text-2xl text-gray-800'>Home</nuxt-link>
-              </li>
-              <li @click='activeOff' class='mt-4'>
-                <nuxt-link to='/aboutDetail' class='text-2xl text-gray-800'>About</nuxt-link>
-              </li>
-              <li @click='activeOff' class='mt-4'>
-                <nuxt-link to='/skillDetail' class='text-2xl text-gray-800'>Skill</nuxt-link>
-              </li>
+              <nuxt-link to='/' class='text-2xl text-gray-800'>
+                <li @click='activeOff' class='h-16 pt-4'>
+                  Home
+                </li>
+              </nuxt-link>
+              <nuxt-link to='/aboutDetail' class='text-2xl text-gray-800'>
+                <li @click='activeOff' class='h-16 pt-4'>
+                  About
+                </li>
+              </nuxt-link>
+              <nuxt-link to='/skillDetail' class='text-2xl text-gray-800'>
+                <li @click='activeOff' class='h-16 pt-4'>
+                  Skill
+                </li>
+              </nuxt-link>
             </ul>
           </div>
         </transition>
