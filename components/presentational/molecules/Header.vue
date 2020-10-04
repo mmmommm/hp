@@ -3,21 +3,21 @@
     <div>
       <header class='text-gray-700'>
         <div class='h-16 px-2 flex justify-between items-center w-screen fixed bg-red-200 md:px-12'>
-          <h1 class='text-2xl font-semibold md:text-l text-gray-700'>KISSE PORTFOLIO</h1>
+          <h1 class='text-2xl font-semibold md:text-l text-gray-700 font-mono'>KISSE PORTFOLIO</h1>
           <div class='hidden md:block'>
             <ul class='md:flex md:mr-12'>
               <nuxt-link to='/' class='px-8 hover:bg-pink-100 transition duration-500 ease-in-out'>
-                <li class='h-16 w-16 pt-4 border-b md:border-none pl-2'>
+                <li class='h-16 w-16 pt-4 border-b md:border-none pl-2 font-mono'>
                   Home
                 </li>
               </nuxt-link>
               <nuxt-link to='/aboutDetail' class='px-8 hover:bg-pink-100 transition duration-500 ease-in-out'>
-                <li class='h-16 w-16 pt-4 border-b md:border-none pl-2'>
+                <li class='h-16 w-16 pt-4 border-b md:border-none pl-2 font-mono'>
                   About
                 </li>
               </nuxt-link>
               <nuxt-link to='/skillDetail' class='px-8 hover:bg-pink-100 transition duration-500 ease-in-out'>
-                <li class='h-16 w-16 pt-4 border-b md:border-none pl-4'>
+                <li class='h-16 w-16 pt-4 border-b md:border-none pl-4 font-mono'>
                   Skill
                 </li>
               </nuxt-link>
@@ -33,16 +33,16 @@
           </button>
         </div>
         <transition name='navi'>
-          <div v-show='active' class='mt-16 fixed w-screen bg-gray-900'>
-            <ul class='text-center'>
-              <li class='border-b' @click='activeOff'>
-                <nuxt-link to='/' class='text-2xl'>Home</nuxt-link>
+          <div v-show='active' class='mt-16 fixed h-48 w-48 bg-red-300 right-0 mr-4'>
+            <ul class='text-center font-mono'>
+              <li @click='activeOff' class='mt-6'>
+                <nuxt-link to='/' class='text-2xl text-gray-800'>Home</nuxt-link>
               </li>
-              <li class='border-b' @click='activeOff'>
-                <nuxt-link to='/aboutDetail' class='text-2xl'>About</nuxt-link>
+              <li @click='activeOff' class='mt-4'>
+                <nuxt-link to='/aboutDetail' class='text-2xl text-gray-800'>About</nuxt-link>
               </li>
-              <li class='border-b' @click='activeOff'>
-                <nuxt-link to='/skillDetail' class='text-2xl'>Skill</nuxt-link>
+              <li @click='activeOff' class='mt-4'>
+                <nuxt-link to='/skillDetail' class='text-2xl text-gray-800'>Skill</nuxt-link>
               </li>
             </ul>
           </div>

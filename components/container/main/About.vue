@@ -3,7 +3,7 @@
     <div class='introduce-wrapper lg:flex pt-6 md:pt-0'>
       <div class='w-screen lg:w-1/2'>
         <div id='about-start' class="about-start">
-          <div class='text-5xl md:text-6xl text-center md:mt-24 md:ml-48 text-gray-700'>
+          <div class='text-5xl md:text-6xl text-center md:mt-24 md:ml-48 text-gray-700 font-mono'>
             <h1>ABOUT</h1>
           </div>
           <div class='mt-4 px-4 md:ml-24 box text-gray-700'>
@@ -34,7 +34,7 @@
             </div>
             <div class='sm:w-1/3 lg:w-1/6 ml-4 md:ml-0 mt-2'>
               <nuxt-link to='/aboutDetail'>
-                <button class='duration-500 ease-in-out bg-transparent text-black-700 font-semibold hover:text-white hover:bg-pink-300 py-2 px-4 border border-black-500 rounded'>
+                <button class='duration-500 ease-in-out bg-transparent text-black-700 font-semibold hover:bg-pink-200 py-2 px-4 border border-black-500 rounded'>
                   more ＞
                 </button>
               </nuxt-link>
