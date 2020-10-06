@@ -12,13 +12,13 @@
     <div class='md:w-1/2 text-center'>
       <p class='md:text-6xl welcome hidden md:block text-gray-700'>Welcome</p>
       <p class='md:text-6xl to hidden md:block text-gray-700'>to</p>
-      <div class='flex flex-no-wrap -mt-16 md:mt-0 pl-4 md:ml-48 md:pb-24 text-pink-100 md:text-gray-700'>
+      <div class='flex flex-no-wrap -mt-16 md:mt-0 md:pb-24 text-pink-100 md:text-gray-700 ml-4 md:ml-0 md:justify-center'>
         <div v-for='(text, i) in texts' :key='i'>
           <p class='text-xl md:text-4xl title ml-1'>{{ text }}</p>
         </div>
       </div>
-      <div>
-        <a class='btn_scroll ml-16 md:ml-32'>
+      <div class='hidden md:block'>
+        <a class='btn_scroll ml-4 xl:ml-8'>
         <span></span>
         scroll
         </a>
@@ -62,7 +62,7 @@ export default class Home extends Vue {
 a.btn_scroll {
   position: absolute;
   bottom: -15px;
-  left: 65%;
+  left: 72%;
   z-index: 2px;
   display: inline-block;
   transform: translate(0, -50%);
@@ -73,10 +73,10 @@ a.btn_scroll {
 a.btn_scroll span {
   position: absolute;
   top: 0;
-  left: 50%;
+  left: 72%;
   width: 30px;
   height: 50px;
-  margin-left: -15px;
+  margin-left: -20px;
   border: 2px solid #feb2b2;
   border-radius: 50px;
   box-sizing: border-box;
@@ -84,11 +84,11 @@ a.btn_scroll span {
 a.btn_scroll span::before {
   position: absolute;
   top: 10px;
-  left: 50%;
+  left: 72%;
   content: '';
   width: 6px;
   height: 6px;
-  margin-left: -3px;
+  margin-left: -9px;
   background-color: #feb2b2;
   border-radius: 100%;
   -webkit-animation: sdb 2s infinite;
