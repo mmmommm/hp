@@ -21,6 +21,11 @@
                   Skill
                 </li>
               </nuxt-link>
+              <nuxt-link to='/contact' class='px-8 hover:bg-pink-100 transition duration-500 ease-in-out'>
+                <li class='h-16 w-16 pt-4 border-b md:border-none font-mono'>
+                  Contact
+                </li>
+              </nuxt-link>
             </ul>
           </div>
           <button @click='activeToggle' class='md:hidden'>
@@ -33,7 +38,7 @@
           </button>
         </div>
         <transition name='navi'>
-          <div v-show='active' class='mt-16 fixed h-48 w-48 bg-red-300 right-0 mr-4'>
+          <div v-show='active' class='mt-16 fixed h-60 w-48 bg-red-300 right-0 mr-4'>
             <ul class='text-center font-mono'>
               <nuxt-link to='/' class='text-2xl text-gray-800'>
                 <li @click='activeOff' class='h-16 pt-4'>
@@ -48,6 +53,11 @@
               <nuxt-link to='/skillDetail' class='text-2xl text-gray-800'>
                 <li @click='activeOff' class='h-16 pt-4'>
                   Skill
+                </li>
+              </nuxt-link>
+              <nuxt-link to='/contact' class='text-2xl text-gray-800'>
+                <li @click='activeOff' class='h-16 pt-4'>
+                  Contact
                 </li>
               </nuxt-link>
             </ul>
