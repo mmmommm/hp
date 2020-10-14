@@ -19,22 +19,22 @@
           </div>
           <div class='flex mx-2 link-wrapper mt-8 ml-12 md:ml-48 md:w-full'>
             <div class='sm:w-1/3 lg:w-1/6'>
-              <a href='https://github.com/mmmommm/' target='_blank'>
-                <button class='py-2 px-4 rounded hover:opacity-75'>
+              <a href='https://github.com/mmmommm/' target='_blank' rel='noopener'>
+                <button class='py-2 px-4 rounded hover:opacity-75' name='github-link'>
                   <img src='~/assets/icon/github.jpg' data-src='~/assets/icon/github.jpg' alt='githubのアイコン' class='github'>
                 </button>
               </a>
             </div>
             <div class='sm:w-1/3 lg:w-1/6'>
-              <a href='https://twitter.com/kissessenose' target='_blank'>
-                <button class='py-2 px-4 rounded hover:opacity-75'>
+              <a href='https://twitter.com/kissessenose' target='_blank' rel='noopener'>
+                <button class='py-2 px-4 rounded hover:opacity-75' name='twitter-link'>
                   <img src='~/assets/icon/twitter.png' data-src='~/assets/icon/twitter.png' alt='twitterのアイコン' class ='twitter'>
                 </button>
               </a>
             </div>
             <div class='sm:w-1/3 lg:w-1/6 ml-4 md:ml-0 mt-2'>
               <nuxt-link to='/aboutDetail'>
-                <button class='duration-500 ease-in-out bg-transparent text-black-700 font-semibold hover:bg-pink-200 py-2 px-4 border border-black-500 rounded'>
+                <button class='duration-500 ease-in-out bg-transparent text-black-700 font-semibold hover:bg-pink-200 py-2 px-4 border border-black-500 rounded' name='about-detail'>
                   more ＞
                 </button>
               </nuxt-link>

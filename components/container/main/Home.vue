@@ -18,7 +18,7 @@
         </div>
       </div>
       <div class='hidden md:block'>
-        <a class='btn_scroll ml-4 xl:ml-8'>
+        <a class='btn_scroll ml-4 xl:ml-8' href='javascript:void(0)'>
         <span></span>
         scroll
         </a>
