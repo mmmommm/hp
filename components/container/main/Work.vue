@@ -11,8 +11,8 @@
           <img src='~/assets/image/work.png' data-src='~/assets/image/work.png' alt='brandmemoのホーム画像' class='smwork md:hidden'>
         </div>
         <div class='w-screen lg:w-1/2'>
-          <a :href='this.url' target='_blank'>
-            <button class='title font-semibold py-2 px-4 rounded'>
+          <a :href='this.url' target='_blank' rel='noopener'>
+            <button class='title font-semibold py-2 px-4 rounded' name='work-link'>
               <p class='text-lg md:text-3xl text-gray-700'>{{ this.title }}</p>
             </button>
           </a>
