@@ -1,0 +1,5 @@
+install:
+  - npm install
+after_success:
+  - ./deploy.sh # TODO(you): deploy the PR changes to your staging server.
+  - npm run lh -- --perf=80 --seo=80 --a11y=80 --bp=80 https://kisse.netlify.app/
