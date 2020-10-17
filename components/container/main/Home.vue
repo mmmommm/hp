@@ -56,7 +56,7 @@ export default class Home extends Vue {
   width: 600px;
 }
 .smimage, .lazyloading {
-  height: 700px;
+  height: 640px;
   width: 100%;
 }
 a.btn_scroll {
