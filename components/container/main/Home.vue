@@ -6,7 +6,7 @@
         <img src='~/assets/image/Bicycle2.jpeg' alt='父母ヶ浜で撮った自転車と一緒に撮った画像' class='h-1/2 homeImage2'>
       </div>
       <div class='md:hidden'>
-        <img src='~assets/image/smhome.jpeg' data-src='~assets/image/smhome.jpeg' alt='父母ヶ浜で撮った自転車と一緒に撮った画像' class='smimage'>
+        <img src='~assets/image/smsize.jpeg' data-src='~assets/image/smsize.jpeg' alt='父母ヶ浜で撮った自転車と一緒に撮った画像' class='smimage'>
       </div>
     </div>
     <div class='md:w-1/2 text-center'>
@@ -56,7 +56,7 @@ export default class Home extends Vue {
   width: 600px;
 }
 .smimage, .lazyloading {
-  height: 700px;
+  height: 640px;
   width: 100%;
 }
 a.btn_scroll {
