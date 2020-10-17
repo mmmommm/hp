@@ -33,6 +33,11 @@ export default class contact extends Vue {
     },
     {
       id: 4,
+      title: 'Zenn',
+      href: 'https://zenn.dev/mmomm'
+    },
+    {
+      id: 5,
       title: 'Wantedly',
       href: 'https://www.wantedly.com/users/109825255'
     },
