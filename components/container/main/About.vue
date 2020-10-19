@@ -43,7 +43,7 @@
         </div>
       </div>
       <div class='hidden md:block lg:w-1/2 lg:ml-12'>
-        <img src='~/assets/image/profile.JPG' data-src='~/assets/image/profile.JPG' alt='伏見稲荷で撮った画像' class='profileImage'>
+        <img src='~/assets/image/profile.png' data-src='~/assets/image/profile.png' alt='伏見稲荷で撮った画像' class='profileImage'>
       </div>
       <div class='mt-4 ml-12 md:hidden'>
         <img src='~/assets/image/circleImage.png' data-src='~/assets/image/circleImage.png' alt='伏見稲荷で撮った画像を丸く切り抜いたもの' class="circleImage">
@@ -106,7 +106,7 @@ section{
   width: 200px;
 }
 .profileImage, .lazyloading {
-  width: auto;
+  width: 450;
   height: 600px;
 }
 .circleImage, .lazyloading {
