@@ -9,7 +9,7 @@ nuxt/typescript/tailwindで作りました。
 パフォーマンスや目に優しい配色を心がけました。  
   
 ### desktop  
-[]()  
+![desktop](https://user-images.githubusercontent.com/51479834/96515993-3ef1ca00-12a1-11eb-9314-c10bcf98e9f7.png)  
   
 ### mobile  
-[](https://user-images.githubusercontent.com/51479834/96514571-cb4ebd80-129e-11eb-925e-a412779e2695.png">)
+![mobile](https://user-images.githubusercontent.com/51479834/96515869-0a7e0e00-12a1-11eb-9c46-3c49b68f0b26.png)
