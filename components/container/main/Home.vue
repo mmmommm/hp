@@ -2,7 +2,7 @@
   <section id='home' class='md:h-screen md:flex md:items-center bg-pink-100'>
     <div class='md:w-1/2'>
       <div class='hidden md:block flex md:ml-48 md:mt-32 lg:mt-12'>
-        <img src='~/assets/image/Bicycle1.png' alt='鹿児島で撮った自転車二台の映った画像' class='h-1/2 homeImage1 object-scale-down'>
+        <img src='~/assets/image/Bicycle1.png' alt='鹿児島で撮った自転車二台の映った画像' class='h-1/2 homeImage1'>
         <img src='~/assets/image/Bicycle2.png' alt='父母ヶ浜で撮った自転車と一緒に撮った画像' class='h-1/2 homeImage2'>
       </div>
       <div class='md:hidden'>
@@ -51,10 +51,6 @@ export default class Home extends Vue {
 }
 </script>
 <style scoped>
-.homeImage1, .homeImage2, .lazyloading {
-  height: 450px;
-  width: 600px;
-}
 .smimage, .lazyloading {
   height: 640px;
   width: 360px;
