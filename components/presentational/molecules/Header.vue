@@ -28,7 +28,7 @@
               </nuxt-link>
             </ul>
           </div>
-          <button @click='activeToggle' class='md:hidden' name='hambumgar-menu'>
+          <button @click='activeToggle' class='md:hidden' aria-label="hamburger menu">
             <transition name='navi'>
               <svg class='h-6 w-6 fill-current' viewBox='0 0 24 24'>
                 <path v-show='!active' d='M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z'/>
