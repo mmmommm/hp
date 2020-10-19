@@ -62,7 +62,7 @@ export default class Skill extends Vue {
     },
     {
       id:5,
-      name: 'React/Next',
+      name: 'React',
       src: 'react.jpg'
     },
     {
