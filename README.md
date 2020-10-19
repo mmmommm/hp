@@ -6,7 +6,10 @@
 nuxt/typescript/tailwindで作りました。  
   
 アニメーション付けてみたかったので少しだけアニメーションつけてます。  
-目に優しい配色を心がけました。  
-
-
-
+パフォーマンスや目に優しい配色を心がけました。  
+  
+### desktop  
+[]()  
+  
+### mobile  
+[](https://user-images.githubusercontent.com/51479834/96514571-cb4ebd80-129e-11eb-925e-a412779e2695.png">)

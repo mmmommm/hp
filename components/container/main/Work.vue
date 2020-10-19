@@ -16,7 +16,7 @@
           </div>
           <div class='w-screen lg:w-1/2 ml-4 md:ml-8'>
             <a :href='work.url' target='_blank' rel='noopener'>
-              <button class='title font-semibold py-2 px-4 rounded' name='work-link'>
+              <button class='title font-semibold py-2 px-4 rounded' aria-label='work link'>
                 <p class='text-lg md:text-3xl text-gray-700'>{{ work.title }}</p>
               </button>
             </a>
