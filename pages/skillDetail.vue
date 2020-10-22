@@ -43,14 +43,14 @@ export default class SkillDetail extends Vue {
       name: 'CSS',
       src: 'css.png',
       period: '一年ちょっと',
-      description: 'HTMLと同じ時期に触り始めました、vuetifyとかのUIフレームワークに逃げてしまっていたので、これから深く理解していきたいです。'
+      description: 'HTMLと同じ時期に触り始めました、先日あったインターンで理解の浅さが出てしまったのでしっかり学びます。'
     },
     {
       id: 3,
       name: 'Typescript',
       src: 'ts.png',
       period: '半年ぐらい',
-      description: 'vueとかのフレームワークを使用するときに使っているので、js自体にとても詳しいってわけじゃないところ直したい。。。'
+      description: 'vueとかのフレームワークを使用するときに使っているので、js自体にとても詳しいってわけじゃないところ直したいです、最近は全てtsで書くようにしているので少しは使えるようになっていると思います。'
     },
     {
       id: 4,
@@ -92,14 +92,14 @@ export default class SkillDetail extends Vue {
       name: 'Firebase',
       src: 'firebase.png',
       period: '一年ちょっと',
-      description: 'ほとんどサーバーサイドの機能を任せています、大体の機能は使えるつもりですがSQLの知識がなさすぎてfirestoreの設計ができません。。。'
+      description: 'ほとんどサーバーサイドの機能を任せています、大体の機能は使えるつもりですがfirestoreの設計はあまり自信がありません。'
     },
     {
       id: 10,
       name: 'Golang',
       src: 'go.png',
       period: '三ヶ月ぐらい',
-      description: '最近触り始めました、slackbotを作成しました、これからしっかりと学んでいきたいです。'
+      description: '最近触り始めました、slackbotとCLIツールを作りました、これからしっかりと学んでいきたいです。'
     }
 
   ]
