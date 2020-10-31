@@ -12,15 +12,15 @@
         <div class='md:flex md:mx-4 my-4 py-2 md:border-2 md:border-black md:rounded'>
           <div class='w-screen md:w-1/2'>
             <img :src="require('~/static/work/' + work.src)" :data-src="require('~/static/work/' + work.src)" alt='作品のホーム画像' class='workwork hidden md:block md:ml-4'>
-            <img :src="require('~/static/work/' + work.src)" :data-src="require('~/static/work/' + work.src)" alt='作品のホーム画像' class='smwork md:hidden'>
+            <img :src="require('~/static/work/' + work.src)" :data-src="require('~/static/work/' + work.src)" alt='作品のホーム画像' class='ml-8 smwork md:hidden'>
           </div>
-          <div class='w-screen lg:w-1/2 ml-4 md:ml-8'>
+          <div class='w-screen lg:w-1/2 md:ml-8'>
             <a :href='work.url' target='_blank' rel='noopener'>
-              <button class='title font-semibold py-2 px-4 rounded' aria-label='work link'>
+              <button class='title font-semibold py-2 px-4 rounded ml-4' aria-label='work link'>
                 <p class='text-lg md:text-3xl text-gray-700'>{{ work.title }}</p>
               </button>
             </a>
-            <p class='text-sm md:text-lg mt-4 mr-4 text-gray-700'>{{ work.content }}</p>
+            <p class='text-sm md:text-lg mt-4 mx-4 text-gray-700'>{{ work.content }}</p>
           </div>
         </div>
       </div>
