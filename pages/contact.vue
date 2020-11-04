@@ -46,6 +46,12 @@ export default class contact extends Vue {
       href: 'https://www.wantedly.com/users/109825255',
       class: 'text-2xl text-blue-700'
     },
+    {
+      id: 6,
+      title: 'LAPRAS',
+      href: 'https://lapras.com/public/LU7IGQD',
+      class: 'text-2xl text-blue-900'
+    }
   ]
 }
 </script>
