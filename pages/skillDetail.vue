@@ -100,6 +100,13 @@ export default class SkillDetail extends Vue {
       src: 'go.png',
       period: '三ヶ月ぐらい',
       description: '最近触り始めました、slackbotとCLIツールを作りました、これからしっかりと学んでいきたいです。'
+    },
+    {
+      id: 11,
+      name: 'php/Laravel',
+      src: 'php.png',
+      period: '一ヶ月ぐらい',
+      description: 'インターン先で使用しました、検索処理の改善を行いました。'
     }
 
   ]

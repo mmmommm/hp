@@ -89,6 +89,11 @@ export default class Skill extends Vue {
       id: 10,
       name: 'Golang',
       src: 'go.png'
+    },
+    {
+      id: 11,
+      name: 'php/Laravel',
+      src: 'php.png'
     }
   ]
   mounted() {
