@@ -24,13 +24,15 @@
   "devDependencies": {
     "@nuxt/typescript-build": "^0.6.0",
     "@nuxtjs/tailwindcss": "^1.0.0",
-    "@vue/test-utils": "^1.0.0-beta.27",
-    "babel-jest": "^24.1.0",
-    "jest": "^24.1.0",
+    "@types/jest": "^26.0.17",
+    "@vue/test-utils": "^1.1.1",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-jest": "^24.9.0",
+    "jest": "^25.0.0",
     "lighthousebot": "git+https://github.com/GoogleChromeLabs/lighthousebot.git",
     "node-sass": "^4.14.1",
     "sass-loader": "^8.0.2",
-    "ts-jest": "^25.0.0",
-    "vue-jest": "^4.0.0-rc.0"
+    "ts-jest": "^25.5.1",
+    "vue-jest": "^3.0.7"
   }
 }
