@@ -1,7 +1,7 @@
 <template>
   <div class='pt-24 md:pt-16 bg-white w-full mx-auto max-w-sm md:max-w-lg'>
     <h1 class='text-4xl md:text-5xl ml-2 md:ml-0 text-gray-700'>CONTACT</h1>
-    <h4 class='text-gray-700 ml-4 md:ml-0 mt-4'>何かありましたらryota1839[at]gmail.comにご連絡ください。</h4>
+    <h4 class='text-gray-700 ml-4 md:ml-0 mt-4'>何かありましたらomotenashikyoto2020[at]gmail.comにご連絡ください。</h4>
     <div class='text-center flex flex-wrap font-mono mt-4'>
       <div v-for='(link, i) in links' :key='i' class='h-16 md:h-32 pt-4 md:pt-12 my-8 w-full md:w-1/2'>
         <a :href='link.href' target='_blank' :class='link.class' rel='noopener noreferrer'>
