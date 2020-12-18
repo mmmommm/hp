@@ -32,8 +32,7 @@
 import { Vue, Component, Watch } from 'vue-property-decorator';
 import { skillCard } from '~/interface/skillCard';
 import 'lazysizes'
-@Component({
-})
+@Component({})
 export default class Skill extends Vue {
   positionY = 0
   positions = {
