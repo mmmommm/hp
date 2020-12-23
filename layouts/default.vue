@@ -7,8 +7,8 @@
 </template>
 <script lang="ts">
 import { Vue, Component } from "vue-property-decorator";
-import Header from '../components/presentational/molecules/Header.vue'
-import Footer from '../components/presentational/molecules/Footer.vue'
+import Header from '../components/presentational/Header.vue'
+import Footer from '../components/presentational/Footer.vue'
 @Component({
   components: {
     Header,

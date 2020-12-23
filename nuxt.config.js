@@ -1,6 +1,6 @@
 
 export default {
-  mode: 'spa',
+  mode: 'universal',
   /*
   ** Headers of the page
   */
@@ -59,5 +59,6 @@ export default {
     fallback: true
   },
   router: {
-  }
+  },
+  target: "static"
 }
