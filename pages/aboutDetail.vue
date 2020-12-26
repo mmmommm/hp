@@ -4,7 +4,7 @@
       <h1 class='text-4xl md:text-5xl text-gray-700 ml-16 md:ml-24 font-mono'>ABOUT</h1>
       <div class='mt-4 px-4 py-6 md:ml-24'>
         <p class='mt-4 text-gray-700 md:text-base about-first'>
-          同志社大学商学部三回きっせです。<br>
+          同志社大学商学部三回きせです。<br>
           簿記会計・企業経営を専攻しておりマーケティングのゼミに所属しています。
         </p><br>
         <p class='text-gray-700 md:text-base about-second'>
@@ -14,10 +14,10 @@
           どうせ独学できる範囲だろうという判断で選びませんでした。企業経営の概念とかは本とかでは身につかないような気がしたのも理由です。
         </p><br><br>
         <p class='text-gray-700 md:text-base about-third'>
-          文系ですが友達から誘われてプログラミングスクールに通ったのがこの世界に触れるようになった理由です、今はエンジニアとしての就職を考えています。<br>
+          文系ですが友達から誘われてプログラミングスクールに通ったのがこの世界に触れるようになったきっかけです、今はエンジニアとしての就職を考えています。<br>
         </p><br>
         <p class='text-gray-700 md:text-base about-fourth'>
-          気になる技術としては最近はウェブパフォーマンスに興味があるのでnextを使ってAMPなど実装してみたいです。
+          気になる技術としては最近はウェブパフォーマンスに興味があります。
         </p><br><br>
         <p class='text-gray-700 md:text-base about-fifth'>
           22卒の予定ですが、気が変わって休学とかしたら23卒になるかも知れないです。

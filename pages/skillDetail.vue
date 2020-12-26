@@ -57,7 +57,7 @@ export default class SkillDetail extends Vue {
       name: 'Vue/Nuxt',
       src: 'nuxt.png',
       period: '一年ぐらい',
-      description: '基本的にフロントエンドはこれで書いています、大抵の処理はかけますがコンポーネントの分割とかが苦手なのをどうにかしたいです。'
+      description: '最近自分で作成したアプリケーションをcomposition-apiに書き直しました。普通にかけます。'
     },
     {
       id: 5,
