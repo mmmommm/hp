@@ -57,17 +57,17 @@ export default class Skill extends Vue {
     {
       id: 4,
       name: 'Vue/Nuxt',
-      src: 'nuxt.png'
+      src: 'vue.png'
     },
     {
       id:5,
       name: 'React',
-      src: 'react.jpg'
+      src: 'react.png'
     },
     {
       id: 6,
       name: 'GitHub',
-      src: 'github.jpg'
+      src: 'github.png'
     },
     {
       id: 7,

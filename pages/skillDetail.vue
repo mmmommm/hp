@@ -55,21 +55,21 @@ export default class SkillDetail extends Vue {
     {
       id: 4,
       name: 'Vue/Nuxt',
-      src: 'nuxt.png',
+      src: 'vue.png',
       period: '一年ぐらい',
-      description: '基本的にフロントエンドはこれで書いています、大抵の処理はかけますがコンポーネントの分割とかが苦手なのをどうにかしたいです。'
+      description: '最近自分で作成したアプリケーションをcomposition-apiに書き直しました。普通にかけます。'
     },
     {
       id: 5,
       name: 'React/Next',
-      src: 'react.jpg',
+      src: 'react.png',
       period: '一ヶ月ぐらい',
       description: '友人と作成しているウェブアプリのフロントエンド部分で使用しています、nextのアップデート情報をみてすごく今触りたいです。'
     },
     {
       id: 6,
       name: 'Git',
-      src: 'github.jpg',
+      src: 'github.png',
       period: '一年ちょっと',
       description: '基本的な機能は使えるつもりです、だいぶ慣れては来ましたがたまに怖い時があります。。。'
     },
