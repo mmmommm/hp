@@ -15,7 +15,7 @@
             <div class='card md:border-2 border-white rounded my-2 md:px-2 py-4 transition duration-500 ease-in-out hover:bg-gray-700'>
               <nuxt-link to='/skillDetail'>
                 <div class='flex ml-4 md:ml-0'>
-                  <img :src="require('~/static/skill/' + skillCard.src)" alt='それぞれの技術の画像' class='w-1/2 icon' :data-src="require('~/static/skill/' + skillCard.src)" />
+                  <img :src="require('~/assets/icon/' + skillCard.src)" alt='それぞれの技術の画像' class='w-1/2 icon' :data-src="require('~/assets/icon/' + skillCard.src)" />
                   <p class='text-base md:text-2xl ml-1 md:ml-4 text-white my-auto w-1/2 text-pink-100'>{{ skillCard.name }}</p>
                 </div>
               </nuxt-link>
