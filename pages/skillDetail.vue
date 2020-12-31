@@ -12,7 +12,7 @@
       >
         <div>
           <div class='flex skillTitle'>
-            <img :src="require('~/static/skill/' + skillDetail.src)" alt='' class='w-1/2 icon'/>
+            <img :src="require('~/assets/icon/' + skillDetail.src)" alt='それぞれの技術のアイコン' class='w-1/2 icon'/>
             <p class='text-base md:text-2xl ml-1 md:ml-4 text-gray-700 my-auto w-1/2'>{{ skillDetail.name }}</p>
           </div>
           <div class='skill-talk'>
